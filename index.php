@@ -15,12 +15,22 @@
 </head>
 <body>
     <header class="header">
+
         <section class="flex">
             <a href="index.php" class="logo">Yum-yum</a>
+
             <nav class="navbar">
-            <a href="index.php" class="logo">Home</a>
-            <a href="index.php" class="logo">Yum-yum</a>
+                <a href="index.php" class="logo">Home</a>
+                <a href="about.php" class="logo">Sobre nós</a>
+                <a href="menu.php" class="logo">Menu</a>
+                <a href="orders.php" class="logo">Vendas</a>
+                <a href="contact.php" class="logo">Contato</a>
             </nav>
+
+            <div class="icons">
+                <a href="search.php"><i class="fas fa-search"></i></a>
+                <a href="cart.php"><i class="fas fa-shopping-cart"></i> <span>(3)</span> </a>
+            </div>
         </section>
     </header>
 </body>
