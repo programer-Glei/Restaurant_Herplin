@@ -51,6 +51,10 @@ section{
     padding: 2rem;
 }
 
+#menu-btn{
+    display: none;
+}
+
 .header{
     position: sticky;
     top: 0; left: 0; right: 0;
@@ -62,5 +66,42 @@ section{
         align-items: center;
         justify-content: space-between;
         position: relative;
+
+        .logo{
+            font-size: 2.5rem;
+            color: $--black;
+        }
+
+        .navbar{
+
+            a{
+                font-size: 2rem;
+                color: $--black;
+                margin: 0 1rem;
+
+                &:hover{
+                    color: $--yellow;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .icons{
+
+            & > *{
+                margin-left: 1.5rem;
+                font-size: 2.5rem;
+                color: $--black;
+                cursor: pointer;
+            }
+
+            & > *:hover{
+                color: $--yellow;
+            }
+
+            span{
+                font-size: 2rem;
+            }
+        }
     }
 }
