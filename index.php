@@ -33,7 +33,18 @@
                 <div id="user-btn" class="fas fa-user"></div>
                 <div id="menu-btn" class="fas fa-bars"></div>
             </div>
+
+            <div class="profile">
+                <p class="name">Gleibinho</p>
+                <div class="flex">
+                    <a href="profile.php" class="btn">Perfil</a>
+                    <a href="#" class="btn">Sair</a>
+                </div>
+                <p class="acconut"><a href="login.php">Conecte-se</a> ou <a href="register.php">Cadastre-se</a> </p>
+            </div>
+
         </section>
     </header>
+    <script src="java/script.js"></script>
 </body>
 </html>
