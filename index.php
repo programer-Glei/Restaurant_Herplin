@@ -38,7 +38,7 @@
                 <p class="name">Gleibinho</p>
                 <div class="flex">
                     <a href="profile.php" class="btn">Perfil</a>
-                    <a href="#" class="btn">Sair</a>
+                    <a href="#" class="delete-btn">Sair</a>
                 </div>
                 <p class="acconut"><a href="login.php">Conecte-se</a> ou <a href="register.php">Cadastre-se</a> </p>
             </div>

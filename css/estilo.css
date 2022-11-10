@@ -49,6 +49,30 @@ section {
   padding: 2rem;
 }
 
+.btn, .delete-btn {
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 1.8rem;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.btn:hover, .delete-btn:hover {
+  letter-spacing: 0.2rem;
+}
+
+.btn {
+  background-color: #fed330;
+  color: #222;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
 #menu-btn {
   display: none;
 }
@@ -125,7 +149,7 @@ section {
 }
 
 .header .flex .profile .acconut {
-  margin-top: 1rem;
+  margin-top: 2rem;
   font-size: 2rem;
   color: #777;
 }
