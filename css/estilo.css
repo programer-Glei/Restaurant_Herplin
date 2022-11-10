@@ -52,7 +52,7 @@ section {
 .btn, .delete-btn {
   margin-top: 1rem;
   display: inline-block;
-  font-size: 1.8rem;
+  font-size: 2rem;
   padding: 1rem 3rem;
   cursor: pointer;
   -webkit-transition: 0.2s linear;
@@ -140,6 +140,13 @@ section {
   top: 120%;
   right: 2rem;
   width: 30rem;
+  display: none;
+  -webkit-animation: fadeIn 0.2s linear;
+          animation: fadeIn 0.2s linear;
+}
+
+.header .flex .profile.active {
+  display: inline-block;
 }
 
 .header .flex .profile .name {
@@ -161,6 +168,20 @@ section {
 .header .flex .profile .acconut a:hover {
   color: #fed330;
   text-decoration: underline;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+  }
 }
 
 /* media queries */

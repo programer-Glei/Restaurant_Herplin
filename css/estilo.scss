@@ -54,7 +54,7 @@ section{
 .btn,.delete-btn{
     margin-top: 1rem;
     display: inline-block;
-    font-size: 1.8rem;
+    font-size: 2rem;
     padding: 1rem 3rem;
     cursor: pointer;
     transition: 0.2s linear;
@@ -135,6 +135,12 @@ section{
             position: absolute;
             top: 120%; right: 2rem;
             width: 30rem;
+            display: none;
+            animation: fadeIn 0.2s linear;
+
+            &.active{
+                display: inline-block;
+            }
 
             .name{
                 font-size: 2rem;
@@ -160,6 +166,12 @@ section{
     }
 }
 
+
+@keyframes fadeIn {
+    0%{
+        transform: translateY(1rem);
+    }
+}
 
 /* media queries */
 
