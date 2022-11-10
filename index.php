@@ -45,6 +45,29 @@
 
         </section>
     </header>
+
+    <!-- footer section starts -->
+    <footer class="footer">
+        <section class="grid">
+            <div class="box">
+                <img src="img/email-icon.png" alt="">
+                <h3>Nosso email</h3>
+                <a href="mailto:gleibson.santos05@gmail.com"></a>
+                <a href="mailto:gleibson.santos04@gmail.com"></a>
+            </div>
+            <div class="box">
+                <img src="img/clock-icon.png" alt="">
+                <h3>Horário de funcionamento</h3>
+                <p>08:00 às 23:00</p>
+            </div>
+            <div class="box">
+                <img src="img/map-icon.png" alt="">
+                <h3>Horário de funcionamento</h3>
+                <p>08:00 às 23:00</p>
+            </div>
+        </section>
+    </footer>
+    <!-- footer section starts -->
     <script src="java/script.js"></script>
 </body>
 </html>
