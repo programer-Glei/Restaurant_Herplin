@@ -11,7 +11,7 @@
     <!-- custom css file link -->
     <link rel="stylesheet" href="css/estilo.css">
 
-    <title>Document</title>
+    <title>Restaurante Herplin</title>
 </head>
 <body>
     <header class="header">
@@ -46,14 +46,28 @@
         </section>
     </header>
 
+    <section class="home">
+        <div class="home-slide">
+            <div class="w">
+                <div class="slide">
+                    <div class="content">
+                        <span>Faça seu pedido</span>
+                        <h3>Pizza deliciosa</h3>
+                        <a href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- footer section starts -->
     <footer class="footer">
         <section class="grid">
             <div class="box">
                 <img src="img/email-icon.png" alt="">
                 <h3>Nosso email</h3>
-                <a href="mailto:gleibson.santos05@gmail.com"></a>
-                <a href="mailto:gleibson.santos04@gmail.com"></a>
+                <a href="mailto:gleibson.santos05@gmail.com">gleibson.santos05@gmail.com</a>
+                <a href="mailto:gleibson.santos04@gmail.com">gleibson.santos04@gmail.com</a>
             </div>
             <div class="box">
                 <img src="img/clock-icon.png" alt="">

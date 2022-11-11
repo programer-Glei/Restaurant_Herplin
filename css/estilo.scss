@@ -192,8 +192,16 @@ section{
             }
 
             p,a{
+                display: block;
                 font-size: 1.7rem;
                 color: $--light-color;
+                line-height: 1.8;
+            }
+
+            a{
+                &:hover{
+                    text-decoration: underline;
+                }
             }
         }
     }

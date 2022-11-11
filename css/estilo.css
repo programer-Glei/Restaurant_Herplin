@@ -202,8 +202,14 @@ section {
 }
 
 .footer .grid .box p, .footer .grid .box a {
+  display: block;
   font-size: 1.7rem;
   color: #777;
+  line-height: 1.8;
+}
+
+.footer .grid .box a:hover {
+  text-decoration: underline;
 }
 
 @-webkit-keyframes fadeIn {
