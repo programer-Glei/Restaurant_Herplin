@@ -62,8 +62,14 @@
             </div>
             <div class="box">
                 <img src="img/map-icon.png" alt="">
-                <h3>Horário de funcionamento</h3>
-                <p>08:00 às 23:00</p>
+                <h3>Nosso endereço</h3>
+                <a href="#">Avenida Professor, São Paulo, Brasil - 048658-000</a>
+            </div>
+            <div class="box">
+                <img src="img/phone-icon.png" alt="">
+                <h3>Nosso número</h3>
+                <a href="#">(81) 99794-0980</a>
+                <a href="#">(81) 3534-1290</a>
             </div>
         </section>
     </footer>
