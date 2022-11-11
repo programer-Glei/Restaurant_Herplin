@@ -166,10 +166,37 @@ section{
     }
 }
 
-.footer .grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-    gap: 1.5rem;
+.footer{
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+        gap: 1.5rem;
+        align-items: flex-start;
+
+        .box{
+            border: $border;
+            padding: 2rem;
+            text-align: center;
+
+            img{
+                height: 10rem;
+                width: 100%;
+                object-fit: contain;
+                margin-bottom: 0.5rem;
+            }
+
+            h3{
+                margin: 1rem 0;
+                font-size: 2rem;
+                color: $--black;
+            }
+
+            p,a{
+                font-size: 1.7rem;
+                color: $--light-color;
+            }
+        }
+    }
 }
 
 

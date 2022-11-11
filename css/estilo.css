@@ -176,6 +176,34 @@ section {
   -ms-grid-columns: (minmax(27rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
   gap: 1.5rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer .grid .box {
+  border: 0.2rem solid #222;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer .grid .box img {
+  height: 10rem;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.footer .grid .box h3 {
+  margin: 1rem 0;
+  font-size: 2rem;
+  color: #222;
+}
+
+.footer .grid .box p, .footer .grid .box a {
+  font-size: 1.7rem;
+  color: #777;
 }
 
 @-webkit-keyframes fadeIn {
