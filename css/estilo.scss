@@ -78,6 +78,7 @@ section{
     display: none;
 }
 
+/* HEADER */
 .header{
     position: sticky;
     top: 0; left: 0; right: 0;
@@ -166,6 +167,21 @@ section{
     }
 }
 
+/* HOME */
+.home{
+    .slide{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        .image{
+            flex: 1 1 40rem;
+        }
+    }
+}
+
+/* FOOTER */
 .footer{
     .grid{
         display: grid;
@@ -208,6 +224,7 @@ section{
 }
 
 
+/* ANIMATION */
 @keyframes fadeIn {
     0%{
         transform: translateY(1rem);
@@ -215,7 +232,6 @@ section{
 }
 
 /* media queries */
-
 @media (max-width:991px){
     html{
         font-size: 55%;

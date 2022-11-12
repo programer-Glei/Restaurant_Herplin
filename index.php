@@ -53,7 +53,30 @@
                     <div class="content">
                         <span>Faça seu pedido</span>
                         <h3>Pizza deliciosa</h3>
-                        <a href="#"></a>
+                        <a href="menu.php">Ver menus</a>
+                    </div>
+                    <div class="image">
+                        <img src="img/home-img-1.png" alt="imagem pizza calabresa">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="content">
+                        <span>Faça seu pedido</span>
+                        <h3>Hambúrguer de queijo</h3>
+                        <a href="menu.php">Ver menus</a>
+                    </div>
+                    <div class="image">
+                        <img src="img/home-img-2.png" alt="imagem pizza calabresa">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="content">
+                        <span>Faça seu pedido</span>
+                        <h3>Frango assado</h3>
+                        <a href="menu.php">Ver menus</a>
+                    </div>
+                    <div class="image">
+                        <img src="img/home-img-3.png" alt="imagem frango assado">
                     </div>
                 </div>
             </div>
