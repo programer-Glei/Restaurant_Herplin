@@ -82,6 +82,7 @@ section{
 .header{
     position: sticky;
     top: 0; left: 0; right: 0;
+    z-index: 100;
     background-color: $--white;
     border-bottom: $border;
 
@@ -172,13 +173,39 @@ section{
     .slide{
         display: flex;
         align-items: center;
-        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
         gap: 2rem;
+        margin-bottom: 4rem;
+
+        .content{
+            flex: 1 1 40rem;
+            text-align: center;
+
+            span{
+               font-size: 2.5rem;
+               color: $--light-color; 
+            }
+
+            h3{
+                margin: 1rem 0;
+                font-size: 6rem;
+                color: $--black;
+                text-transform: capitalize;
+            }
+        }
 
         .image{
             flex: 1 1 40rem;
+
+            img{
+                width: 100%;
+            }
         }
     }
+}
+
+.swiper-pagination-bullet-active{
+    background-color: $--yellow;
 }
 
 /* FOOTER */
@@ -280,6 +307,17 @@ section{
 
             .logo{
                 font-size: 2rem;
+            }
+        }
+    }
+
+    .home{
+        .slide{
+            .content{
+    
+                h3{
+                    font-size: 5rem;
+                }
             }
         }
     }

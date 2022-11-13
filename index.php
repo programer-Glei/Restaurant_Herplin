@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+
     <!-- font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
@@ -47,39 +49,40 @@
     </header>
 
     <section class="home">
-        <div class="home-slide">
-            <div class="w">
-                <div class="slide">
+        <div class="swiper home-slide">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
                     <div class="content">
                         <span>Faça seu pedido</span>
                         <h3>Pizza deliciosa</h3>
-                        <a href="menu.php">Ver menus</a>
+                        <a href="menu.php" class="btn">Ver menu</a>
                     </div>
                     <div class="image">
                         <img src="img/home-img-1.png" alt="imagem pizza calabresa">
                     </div>
                 </div>
-                <div class="slide">
+                <div class="swiper-slide slide">
                     <div class="content">
                         <span>Faça seu pedido</span>
                         <h3>Hambúrguer de queijo</h3>
-                        <a href="menu.php">Ver menus</a>
+                        <a href="menu.php" class="btn">Ver menu</a>
                     </div>
                     <div class="image">
                         <img src="img/home-img-2.png" alt="imagem pizza calabresa">
                     </div>
                 </div>
-                <div class="slide">
+                <div class="swiper-slide slide">
                     <div class="content">
                         <span>Faça seu pedido</span>
                         <h3>Frango assado</h3>
-                        <a href="menu.php">Ver menus</a>
+                        <a href="menu.php" class="btn">Ver menu</a>
                     </div>
                     <div class="image">
                         <img src="img/home-img-3.png" alt="imagem frango assado">
                     </div>
                 </div>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
 
@@ -110,7 +113,22 @@
             </div>
         </section>
     </footer>
-    <!-- footer section starts -->
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link-->
     <script src="java/script.js"></script>
+
+    <script>
+        var swiper = new Swiper(".home-slide",{
+            loop:true,
+            grabCursor:true,
+            effect: "flip",
+            pagination:{
+                el:".swiper-pagination",
+                clickable: true,
+            }
+        });
+    </script>
 </body>
 </html>
