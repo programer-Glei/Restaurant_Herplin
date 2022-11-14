@@ -245,6 +245,19 @@ section {
   text-align: center;
 }
 
+.category .box-container .box:hover {
+  background-color: #222;
+}
+
+.category .box-container .box:hover img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.category .box-container .box:hover h3 {
+  color: #fff;
+}
+
 .category .box-container .box img {
   width: 100%;
   height: 10rem;
@@ -254,6 +267,8 @@ section {
 
 .category .box-container .box h3 {
   font-size: 2rem;
+  margin-top: 1.5rem;
+  color: #222;
 }
 
 /* FOOTER */

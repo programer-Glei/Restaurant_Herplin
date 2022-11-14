@@ -229,6 +229,18 @@ section{
             padding: 2rem;
             text-align: center;
 
+            &:hover{
+                background-color: $--black;
+            }
+
+            &:hover img{
+                filter: invert(1);
+            }
+
+            &:hover h3{
+                color: $--white;
+            }
+
             img{
                 width: 100%;
                 height: 10rem;
@@ -237,6 +249,8 @@ section{
 
             h3{
                 font-size: 2rem;
+                margin-top: 1.5rem;
+                color: $--black;
             }
         }
     }
