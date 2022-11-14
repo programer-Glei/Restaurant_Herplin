@@ -91,22 +91,22 @@
     <section class="category">
         <h1 class="title">Compre por categoria</h1>
         <div class="box-container">
-            <div class="box">
+            <a href="" class="box">
                 <img src="img/cat-1.png" alt="">
                 <h3>Comida rápida</h3>
-            </div>
-            <div class="box">
+            </a>
+            <a href="" class="box">
                 <img src="img/cat-2.png" alt="">
                 <h3>Pratos principais</h3>
-            </div>
-            <div class="box">
+            </a>
+            <a href="" class="box">
                 <img src="img/cat-3.png" alt="">
                 <h3>Bebidas</h3>
-            </div>
-            <div class="box">
+            </a>
+            <a href="" class="box">
                 <img src="img/cat-4.png" alt="">
                 <h3>Sobremesas</h3>
-            </div>
+            </a>
         </div>
     </section>
 
