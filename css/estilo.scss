@@ -302,6 +302,7 @@ section{
                 height: 25rem;
                 width: 100%;
                 object-fit: contain;
+                margin-bottom: 1rem;
             }
 
             &:hover .fa-eye{
@@ -310,6 +311,28 @@ section{
 
             &:hover .fa-shopping-cart{
                 right: 1rem;
+            }
+
+            .cat{
+                font-size: 1.8rem;
+                color: $--light-color;
+
+                &:hover{
+                    color: $--black;
+                    text-decoration: underline;
+                }
+            }
+
+            .name{
+                font-size: 2rem;
+                color: $--black;
+                margin: 1rem 0;
+            }
+
+            .flex{
+                display: flex;
+                align-items: center;
+                gap: 1.5rem;
             }
         }
     }

@@ -326,6 +326,7 @@ section {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+  margin-bottom: 1rem;
 }
 
 .products .box-container .box:hover .fa-eye {
@@ -334,6 +335,32 @@ section {
 
 .products .box-container .box:hover .fa-shopping-cart {
   right: 1rem;
+}
+
+.products .box-container .box .cat {
+  font-size: 1.8rem;
+  color: #777;
+}
+
+.products .box-container .box .cat:hover {
+  color: #222;
+  text-decoration: underline;
+}
+
+.products .box-container .box .name {
+  font-size: 2rem;
+  color: #222;
+  margin: 1rem 0;
+}
+
+.products .box-container .box .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
 }
 
 /* FOOTER */
