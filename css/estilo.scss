@@ -269,6 +269,7 @@ section{
             border: $border;
             padding: 2rem;
             position: relative;
+            overflow: hidden;
 
             .fa-eye,.fa-shopping-cart{
                 position: absolute;
@@ -281,6 +282,7 @@ section{
                 cursor: pointer;
                 font-size: 2rem;
                 color: $--black;
+                transition: 0.2s linear;
 
                 &:hover{
                     background-color: $--black;
@@ -289,13 +291,25 @@ section{
             }
 
             .fa-eye{
-                right: 1rem;
+                left: -10rem;
+            }
+
+            .fa-shopping-cart{
+                right: -10rem;
             }
 
             img{
                 height: 25rem;
                 width: 100%;
                 object-fit: contain;
+            }
+
+            &:hover .fa-eye{
+                left: 1rem;
+            }
+
+            &:hover .fa-shopping-cart{
+                right: 1rem;
             }
         }
     }

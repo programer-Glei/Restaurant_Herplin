@@ -290,6 +290,7 @@ section {
   border: 0.2rem solid #222;
   padding: 2rem;
   position: relative;
+  overflow: hidden;
 }
 
 .products .box-container .box .fa-eye, .products .box-container .box .fa-shopping-cart {
@@ -303,6 +304,8 @@ section {
   cursor: pointer;
   font-size: 2rem;
   color: #222;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
 }
 
 .products .box-container .box .fa-eye:hover, .products .box-container .box .fa-shopping-cart:hover {
@@ -311,7 +314,11 @@ section {
 }
 
 .products .box-container .box .fa-eye {
-  right: 1rem;
+  left: -10rem;
+}
+
+.products .box-container .box .fa-shopping-cart {
+  right: -10rem;
 }
 
 .products .box-container .box img {
@@ -319,6 +326,14 @@ section {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.products .box-container .box:hover .fa-eye {
+  left: 1rem;
+}
+
+.products .box-container .box:hover .fa-shopping-cart {
+  right: 1rem;
 }
 
 /* FOOTER */
