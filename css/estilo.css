@@ -271,6 +271,34 @@ section {
   color: #222;
 }
 
+/* PRODUCTS */
+.products .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(27rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.products .box-container .box {
+  border: 0.2rem solid #222;
+  padding: 2rem;
+  position: relative;
+}
+
+.products .box-container .box img {
+  height: 20rem;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 /* FOOTER */
 .footer .grid {
   display: -ms-grid;
