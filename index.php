@@ -87,7 +87,7 @@
         </div>
     </section>
 
-    <!-- footer section starts -->
+    <!-- category section starts -->
     <section class="category">
         <h1 class="title">Compre por categoria</h1>
         <div class="box-container">
@@ -107,6 +107,17 @@
                 <img src="img/cat-4.png" alt="">
                 <h3>Sobremesas</h3>
             </a>
+        </div>
+    </section>
+
+    <!-- products section starts -->
+    <section class="products">
+        <h1 class="title">Últimos pedidos</h1>
+        <div class="box-container">
+            <form action="" method="post" class="box">
+                <button type="submit" class="fas fa-eye" name="quick_view"></button>
+                <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
+            </form>
         </div>
     </section>
 
