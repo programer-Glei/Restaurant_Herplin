@@ -67,6 +67,24 @@ section{
     flex-flow: column;
     background-color: $--black;
     min-height: 20rem;
+
+    h3{
+        font-size: 5rem;
+        color: $--white;
+    }
+
+    p{
+        font-size: 2rem;
+
+        a{
+            color: $--white;
+
+            &:hover{
+                text-decoration: underline;
+                color: $--yellow;
+            }
+        }
+    }
 }
 
 .btn,.delete-btn{

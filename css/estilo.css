@@ -76,6 +76,24 @@ section {
   min-height: 20rem;
 }
 
+.heading h3 {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.heading p {
+  font-size: 2rem;
+}
+
+.heading p a {
+  color: #fff;
+}
+
+.heading p a:hover {
+  text-decoration: underline;
+  color: #fed330;
+}
+
 .btn, .delete-btn {
   margin-top: 1rem;
   display: inline-block;
