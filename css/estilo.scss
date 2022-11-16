@@ -59,6 +59,16 @@ section{
     text-transform: uppercase;
 }
 
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-flow: column;
+    background-color: $--black;
+    min-height: 20rem;
+}
+
 .btn,.delete-btn{
     margin-top: 1rem;
     display: inline-block;

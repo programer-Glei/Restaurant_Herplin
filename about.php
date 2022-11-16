@@ -49,7 +49,7 @@
     <!-- about section starts -->
     <div class="heading">
         <h3>Sobre nós</h3>
-        <p><a href=""></a> <span></span> </p>
+        <p><a href="index.php">Home</a> <span>/ Sobre nós</span> </p>
     </div>
     <section class="about">
 
