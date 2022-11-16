@@ -361,6 +361,25 @@ section {
       -ms-flex-align: center;
           align-items: center;
   gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.products .box-container .box .flex .price {
+  margin-right: auto;
+  font-size: 2.5rem;
+  color: #222;
+}
+
+.products .box-container .box .flex .price span {
+  color: #777;
+  font-size: 1.8rem;
+}
+
+.products .box-container .box .flex .qty {
+  padding: 1.4rem;
+  border: 0.2rem solid #222;
+  font-size: 1.8rem;
+  color: #222;
 }
 
 /* FOOTER */
