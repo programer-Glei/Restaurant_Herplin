@@ -82,16 +82,20 @@ section {
 }
 
 .heading p {
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 
 .heading p a {
-  color: #fff;
+  color: #fed330;
 }
 
 .heading p a:hover {
   text-decoration: underline;
-  color: #fed330;
+  color: #fff;
+}
+
+.heading p span {
+  color: #777;
 }
 
 .btn, .delete-btn {
@@ -531,6 +535,9 @@ section {
   .products .box-container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .heading h3 {
+    font-size: 4rem;
   }
 }
 /*# sourceMappingURL=estilo.css.map */
