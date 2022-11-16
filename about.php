@@ -52,7 +52,14 @@
         <p><a href="index.php">Home</a> <span>/ Sobre nós</span> </p>
     </div>
     <section class="about">
-
+        <div class="row">
+            <div class="image">
+                <img src="img/about-img.svg" alt="">
+            </div>
+            <div class="content">
+                <h3>Porque nos escolher?</h3>
+            </div>
+        </div>
     </section>
 
     <!-- footer section starts -->
