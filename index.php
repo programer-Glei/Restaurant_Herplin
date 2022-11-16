@@ -181,6 +181,9 @@
                 </div>
             </form>
         </div>
+        <div class="more-btn">
+            <a href="menu.php" class="btn">Menu Completo</a>
+        </div>
     </section>
 
     <!-- footer section starts -->

@@ -288,7 +288,7 @@ section {
 
 .products .box-container .box {
   border: 0.2rem solid #222;
-  padding: 2rem;
+  padding: 1.5rem;
   position: relative;
   overflow: hidden;
 }
@@ -376,10 +376,15 @@ section {
 }
 
 .products .box-container .box .flex .qty {
-  padding: 1.4rem;
+  padding: 1rem;
   border: 0.2rem solid #222;
   font-size: 1.8rem;
   color: #222;
+}
+
+.products .more-btn {
+  margin-top: 2rem;
+  text-align: center;
 }
 
 /* FOOTER */
@@ -485,6 +490,10 @@ section {
   }
   .home .slide .content h3 {
     font-size: 5rem;
+  }
+  .products .box-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 /*# sourceMappingURL=estilo.css.map */

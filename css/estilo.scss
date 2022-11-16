@@ -267,7 +267,7 @@ section{
 
         .box{
             border: $border;
-            padding: 2rem;
+            padding: 1.5rem;
             position: relative;
             overflow: hidden;
 
@@ -347,13 +347,18 @@ section{
                 }
 
                 .qty{
-                    padding: 1.4rem;
+                    padding: 1rem;
                     border: $border;
                     font-size: 1.8rem;
                     color: $--black;
                 }
             }
         }
+    }
+
+    .more-btn{
+        margin-top: 2rem;
+        text-align: center;
     }
 }
 
@@ -472,6 +477,12 @@ section{
                     font-size: 5rem;
                 }
             }
+        }
+    }
+
+    .products{
+        .box-container{
+            grid-template-columns: 1fr;
         }
     }
 }
