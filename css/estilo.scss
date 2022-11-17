@@ -431,6 +431,27 @@ section{
     }
 }
 
+/* STEPS*/
+.steps{
+    .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        gap: 1.5rem;
+        align-items: flex-start;
+
+        .box{
+            text-align: center;
+            border: $border;
+            padding: 2rem;
+
+            img{
+                height: 10rem;
+                width: 100%;
+            }
+        }
+    }
+}
+
 /* FOOTER */
 .footer{
     .grid{

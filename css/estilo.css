@@ -472,6 +472,29 @@ section {
   color: #777;
 }
 
+/* STEPS*/
+.steps .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.steps .box-container .box {
+  text-align: center;
+  border: 0.2rem solid #222;
+  padding: 2rem;
+}
+
+.steps .box-container .box img {
+  height: 10rem;
+  width: 100%;
+}
+
 /* FOOTER */
 .footer .grid {
   display: -ms-grid;
