@@ -394,6 +394,24 @@ section{
     }
 }
 
+/* ABOUT */
+.about{
+    .row{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+
+        .image{
+            flex: 1 1 40rem;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
 /* FOOTER */
 .footer{
     .grid{

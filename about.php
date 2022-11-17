@@ -58,6 +58,8 @@
             </div>
             <div class="content">
                 <h3>Porque nos escolher?</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo sit ipsa dolorem reprehenderit, esse aspernatur?</p>
+                <a href="menu.php" class="btn">Nosso cardápio</a>
             </div>
         </div>
     </section>
