@@ -63,6 +63,27 @@
             </div>
         </div>
     </section>
+    <!-- steps section starts -->
+    <section class="steps">
+        <h1 class="title">Passos simples</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="img/step-1.png" alt="">
+                <h3>Escolha a ordem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dicta amet ab dolorem voluptatem architecto?</p>
+            </div>
+            <div class="box">
+                <img src="img/step-2.png" alt="">
+                <h3>Entrega rápida</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dicta amet ab dolorem voluptatem architecto?</p>
+            </div>
+            <div class="box">
+                <img src="img/step-3.png" alt="">
+                <h3>Aproveite a comida</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dicta amet ab dolorem voluptatem architecto?</p>
+            </div>
+        </div>
+    </section>
 
     <!-- footer section starts -->
     <footer class="footer">

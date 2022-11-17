@@ -462,6 +462,7 @@ section {
   font-size: 3rem;
   color: #222;
   text-transform: capitalize;
+  margin-bottom: 1rem;
 }
 
 .about .row .content p {
