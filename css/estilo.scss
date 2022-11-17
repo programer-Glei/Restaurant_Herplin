@@ -409,6 +409,24 @@ section{
                 width: 100%;
             }
         }
+
+        .content{
+            flex: 1 1 40rem;
+            text-align: center;
+
+            h3{
+                font-size: 3rem;
+                color: $--black;
+                text-transform: capitalize;
+            }
+
+            p{
+                padding: 1rem 0;
+                line-height: 2;
+                font-size: 1.6rem;
+                color: $--light-color;
+            }
+        }
     }
 }
 

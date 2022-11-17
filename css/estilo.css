@@ -451,6 +451,26 @@ section {
   width: 100%;
 }
 
+.about .row .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  text-align: center;
+}
+
+.about .row .content h3 {
+  font-size: 3rem;
+  color: #222;
+  text-transform: capitalize;
+}
+
+.about .row .content p {
+  padding: 1rem 0;
+  line-height: 2;
+  font-size: 1.6rem;
+  color: #777;
+}
+
 /* FOOTER */
 .footer .grid {
   display: -ms-grid;
