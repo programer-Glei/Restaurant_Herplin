@@ -469,6 +469,30 @@ section{
     }
 }
 
+/* REVIEWS */
+.reviews{
+    .slide{
+        margin-bottom: 4rem;
+        border: $border;
+        padding: 2rem;
+        text-align: center;
+
+        img{
+            height: 10rem;
+            width: 10rem;
+            margin-bottom: 0.5rem;
+            border-radius: 50%;
+        }
+
+        p{
+            padding: 1rem 0;
+            line-height: 2;
+            font-size: 1.6rem;
+            color: $--light-color;
+        }
+    }
+}
+
 /* FOOTER */
 .footer{
     .grid{
