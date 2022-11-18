@@ -490,6 +490,12 @@ section{
             font-size: 1.6rem;
             color: $--light-color;
         }
+
+        .stars{
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            border: $border;
+        }
     }
 }
 
