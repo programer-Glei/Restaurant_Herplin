@@ -84,6 +84,25 @@
             </div>
         </div>
     </section>
+    <!-- reviews section starts -->
+    <section class="reviews">
+        <h1 class="title">Avaliações de clientes</h1>
+        <div class="reviews-slider">
+            <div class="w">
+                <div class="slide">
+                    <img src="img/pic-1.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore cumque quos minus maiores nulla et?</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>John Deo</h3>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- footer section starts -->
     <footer class="footer">

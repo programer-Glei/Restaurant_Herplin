@@ -55,6 +55,8 @@ section {
   font-size: 4rem;
   color: #222;
   text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
 }
 
 .heading {
@@ -495,6 +497,7 @@ section {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+  margin-bottom: 1rem;
 }
 
 .steps .box-container .box h3 {
@@ -507,6 +510,7 @@ section {
   line-height: 2;
   font-size: 1.6rem;
   color: #777;
+  text-transform: capitalize;
 }
 
 /* FOOTER */
