@@ -97,6 +97,79 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
+                        <i class="fas fa-star-hal-alt"></i>
+                    </div>
+                    <h3>John Deo</h3>
+                </div>
+                <div class="slide">
+                    <img src="img/pic-2.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore cumque quos minus maiores nulla et?</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-hal-alt"></i>
+                    </div>
+                    <h3>John Deo</h3>
+                </div>
+                <div class="slide">
+                    <img src="img/pic-3.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore cumque quos minus maiores nulla et?</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-hal-alt"></i>
+                    </div>
+                    <h3>John Deo</h3>
+                </div>
+                <div class="slide">
+                    <img src="img/pic-4.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore cumque quos minus maiores nulla et?</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-hal-alt"></i>
+                    </div>
+                    <h3>John Deo</h3>
+                </div>
+                <div class="slide">
+                    <img src="img/pic-5.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore cumque quos minus maiores nulla et?</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-hal-alt"></i>
+                    </div>
+                    <h3>John Deo</h3>
+                </div>
+                <div class="slide">
+                    <img src="img/pic-6.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore cumque quos minus maiores nulla et?</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-hal-alt"></i>
+                    </div>
+                    <h3>John Deo</h3>
+                </div>
+                <div class="slide">
+                    <img src="img/pic-7.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore cumque quos minus maiores nulla et?</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-hal-alt"></i>
                     </div>
                     <h3>John Deo</h3>
                 </div>
