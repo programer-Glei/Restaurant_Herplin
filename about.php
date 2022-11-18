@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+
     <!-- font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
@@ -87,9 +89,9 @@
     <!-- reviews section starts -->
     <section class="reviews">
         <h1 class="title">Avaliações de clientes</h1>
-        <div class="reviews-slider">
-            <div class="w">
-                <div class="slide">
+        <div class="swiper reviews-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
                     <img src="img/pic-1.png" alt="">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore cumque quos minus maiores nulla et?</p>
                     <div class="stars">
@@ -101,7 +103,7 @@
                     </div>
                     <h3>John Deo</h3>
                 </div>
-                <div class="slide">
+                <div class="swiper-slide slide">
                     <img src="img/pic-2.png" alt="">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore cumque quos minus maiores nulla et?</p>
                     <div class="stars">
@@ -113,7 +115,7 @@
                     </div>
                     <h3>John Deo</h3>
                 </div>
-                <div class="slide">
+                <div class="swiper-slide slide">
                     <img src="img/pic-3.png" alt="">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore cumque quos minus maiores nulla et?</p>
                     <div class="stars">
@@ -125,7 +127,7 @@
                     </div>
                     <h3>John Deo</h3>
                 </div>
-                <div class="slide">
+                <div class="swiper-slide slide">
                     <img src="img/pic-4.png" alt="">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore cumque quos minus maiores nulla et?</p>
                     <div class="stars">
@@ -137,7 +139,7 @@
                     </div>
                     <h3>John Deo</h3>
                 </div>
-                <div class="slide">
+                <div class="swiper-slide slide">
                     <img src="img/pic-5.png" alt="">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore cumque quos minus maiores nulla et?</p>
                     <div class="stars">
@@ -149,7 +151,7 @@
                     </div>
                     <h3>John Deo</h3>
                 </div>
-                <div class="slide">
+                <div class="swiper-slide slide">
                     <img src="img/pic-6.png" alt="">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore cumque quos minus maiores nulla et?</p>
                     <div class="stars">
@@ -161,19 +163,8 @@
                     </div>
                     <h3>John Deo</h3>
                 </div>
-                <div class="slide">
-                    <img src="img/pic-7.png" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore cumque quos minus maiores nulla et?</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-hal-alt"></i>
-                    </div>
-                    <h3>John Deo</h3>
-                </div>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
 
@@ -205,8 +196,22 @@
         </section>
     </footer>
 
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
     <!-- custom js file link-->
     <script src="java/script.js"></script>
+
+    <script>
+        var swiper = new Swiper(".reviews-slider",{
+            loop:true,
+            grabCursor:true,
+            effect: "flip",
+            pagination:{
+                el:".swiper-pagination",
+                clickable: true,
+            }
+        });
+    </script>
 </body>
 </html>
 

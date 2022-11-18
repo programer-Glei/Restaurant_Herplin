@@ -513,6 +513,45 @@ section {
   text-transform: capitalize;
 }
 
+/* REVIEWS */
+.reviews .slide {
+  margin-bottom: 4rem;
+  border: 0.2rem solid #222;
+  padding: 2rem;
+  text-align: center;
+}
+
+.reviews .slide img {
+  height: 10rem;
+  width: 10rem;
+  margin-bottom: 0.5rem;
+  border-radius: 50%;
+}
+
+.reviews .slide p {
+  padding: 1rem 0;
+  line-height: 2;
+  font-size: 1.6rem;
+  color: #777;
+}
+
+.reviews .slide .stars {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border: 0.2rem solid #222;
+}
+
+.reviews .slide .stars i {
+  font-size: 1.8rem;
+  color: #fed330;
+}
+
+.reviews .slide h3 {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  color: #222;
+}
+
 /* FOOTER */
 .footer .grid {
   display: -ms-grid;
