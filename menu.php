@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
-
     <!-- font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
@@ -54,7 +52,7 @@
     </div>
     <!-- menu section starts -->
     <section class="products">
-        <h1 class="title">Últimos pedidos</h1>
+        <h1 class="title">Cardapio Completo</h1>
         <div class="box-container">
             <form action="" method="post" class="box">
                 <button type="submit" class="fas fa-eye" name="quick_view"></button>
@@ -299,9 +297,6 @@
                 </div>
             </form>
         </div>
-        <div class="more-btn">
-            <a href="menu.php" class="btn">Menu Completo</a>
-        </div>
     </section>
     <!-- steps section starts -->
     <!-- reviews section starts -->
@@ -334,33 +329,8 @@
         </section>
     </footer>
 
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
     <!-- custom js file link-->
     <script src="java/script.js"></script>
-
-    <script>
-        var swiper = new Swiper(".reviews-slider",{
-            loop:true,
-            grabCursor:true,
-            spaceBetween: 20,
-            pagination:{
-                el:".swiper-pagination",
-                clickable: true,
-            },
-            breakpoints: {
-                0: {
-                    slidesPerView: 1,
-                },
-                700: {
-                    slidesPerView: 2,
-                },
-                1024: {
-                    slidesPerView: 3,
-                },
-            }
-        });
-    </script>
 </body>
 </html>
 
