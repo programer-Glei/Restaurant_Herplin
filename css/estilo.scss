@@ -509,6 +509,16 @@ section{
     }
 }
 
+/* CONTACT */
+.contact{
+    .row{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+}
+
 /* FOOTER */
 .footer{
     .grid{

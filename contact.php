@@ -11,7 +11,7 @@
     <!-- custom css file link -->
     <link rel="stylesheet" href="css/estilo.css">
 
-    <title>Menu</title>
+    <title>Contato</title>
 </head>
 <body>
     <header class="header">
@@ -50,7 +50,7 @@
         <h3>Contatos</h3>
         <p><a href="index.php">Home</a> <span>/ Catato</span> </p>
     </div>
-    <!-- menu section starts -->
+    <!-- contact section starts -->
     <section class="contact">
         <div class="row">
             <div class="image">

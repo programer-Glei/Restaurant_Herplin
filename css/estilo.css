@@ -524,12 +524,11 @@ section {
 .reviews .slide img {
   height: 10rem;
   width: 10rem;
-  margin-bottom: 0.5rem;
   border-radius: 50%;
 }
 
 .reviews .slide p {
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   line-height: 2;
   font-size: 1.6rem;
   color: #777;
@@ -550,6 +549,19 @@ section {
   font-size: 2rem;
   margin-top: 1.5rem;
   color: #222;
+}
+
+/* CONTACT */
+.contact .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
 /* FOOTER */
