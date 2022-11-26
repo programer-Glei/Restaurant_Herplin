@@ -564,6 +564,25 @@ section {
   gap: 1.5rem;
 }
 
+.contact .row .image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.contact .row .image img {
+  width: 100%;
+}
+
+.contact .row form {
+  border: 0.2rem solid #222;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  padding: 2rem;
+  text-align: center;
+}
+
 /* FOOTER */
 .footer .grid {
   display: -ms-grid;

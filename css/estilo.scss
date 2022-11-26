@@ -516,6 +516,21 @@ section{
         align-items: center;
         flex-wrap: wrap;
         gap: 1.5rem;
+
+        .image{
+            flex: 1 1 40rem;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        form{
+            border: $border;
+            flex: 1 1 40rem;
+            padding: 2rem;
+            text-align: center;
+        }
     }
 }
 
