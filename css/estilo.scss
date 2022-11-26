@@ -530,6 +530,27 @@ section{
             flex: 1 1 40rem;
             padding: 2rem;
             text-align: center;
+
+            h3{
+                font-size: 3rem;
+                color: $--black;
+                margin-bottom: 1rem;
+            }
+
+            .box{
+                margin: 1rem 0;
+                font-size: 1.8rem;
+                color: $--black;
+                border: $border;
+                padding: 1.4rem;
+                width: 100%;
+            }
+
+            textarea{
+                height: 15rem;
+                resize: none;
+            }
+
         }
     }
 }
