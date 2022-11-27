@@ -646,6 +646,35 @@ section {
   text-decoration: underline;
 }
 
+/* SEARCH */
+.search-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.search-form form .box {
+  width: 100%;
+  border: 0.2rem solid #222;
+  padding: 1.4rem;
+  font-size: 1.8rem;
+  color: #222;
+}
+
+.search-form form .fa-search {
+  width: 6rem;
+  background-color: #222;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+
+.search-form form .fa-search:hover {
+  background-color: #fed330;
+  color: #222;
+}
+
 /* ANIMATION */
 @-webkit-keyframes fadeIn {
   0% {

@@ -597,6 +597,35 @@ section{
     }
 }
 
+/* SEARCH */
+.search-form{
+    form{
+        display: flex;
+        gap: 1rem;
+
+        .box{
+            width: 100%;
+            border: $border;
+            padding: 1.4rem;
+            font-size: 1.8rem;
+            color: $--black;
+        }
+
+        .fa-search{
+            width: 6rem;
+            background-color: $--black;
+            color: $--white;
+            cursor: pointer;
+            font-size: 2.5rem;
+
+            &:hover{
+                background-color: $--yellow;
+                color: $--black;
+            }
+        }
+    }
+}
+
 
 /* ANIMATION */
 @keyframes fadeIn {
