@@ -53,6 +53,7 @@
             <button type="submit" class="fas fa-search" name="search_btn"></button>
         </form>
     </section>
+    <section class="products" style="min-height:100vh; padding-top:0;"></section>
     <!-- steps section starts -->
     <!-- reviews section starts -->
 
