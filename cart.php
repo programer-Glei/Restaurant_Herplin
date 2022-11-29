@@ -89,7 +89,7 @@
         </div>
         <div class="more-btn">
             <form action="" method="post">
-                <button type="submit" class="fas fa-times" name="delete_all" onclick="return confirm('delete this item?');"></button>
+                <button type="submit" class="delete-btn" name="delete_all" onclick="return confirm('excluir tudo do carrinho?');">Deletar tudo</button>
             </form>
         </div>
     </section>
