@@ -72,6 +72,25 @@
                 </div>
                 <div class="sub-total">Subtotal: <span>R$15,00</span> </div>
             </form>
+
+            <form action="" method="post" class="box">
+                <button type="submit" class="fas fa-eye" name="quick_view"></button>
+                <button type="submit" class="fas fa-times" name="delete" onclick="return confirm('delete this item?');"></button>
+                <img src="img/pizza-2.png" alt="imagem de Hamburguer">
+                <a href="#" class="cat">Comida rápida</a>
+                <div class="name">X tudo</div>
+                <div class="flex">
+                    <div class="price"> <span>R$</span>15 </div>
+                    <input type="number" name="qty" id="" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+                    <button type="submit" class="fas fa-edit"></button>
+                </div>
+                <div class="sub-total">Subtotal: <span>R$15,00</span> </div>
+            </form>
+        </div>
+        <div class="more-btn">
+            <form action="" method="post">
+                <button type="submit" class="fas fa-times" name="delete_all" onclick="return confirm('delete this item?');"></button>
+            </form>
         </div>
     </section>
     <!-- steps section starts -->
