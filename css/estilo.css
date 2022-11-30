@@ -443,6 +443,15 @@ section {
 .products .box-container .box .fa-times {
   position: absolute;
   top: 1rem;
+  right: 1rem;
+  background-color: #e74c3c;
+  color: #fff;
+  border: 0.2rem solid #222;
+  line-height: 4rem;
+  width: 4.5rem;
+  height: 4.3rem;
+  cursor: pointer;
+  font-size: 2rem;
 }
 
 .products .more-btn {
