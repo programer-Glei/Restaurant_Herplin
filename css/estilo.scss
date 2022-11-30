@@ -367,7 +367,7 @@ section{
                 display: flex;
                 align-items: center;
                 gap: 1rem;
-                margin-top: 1rem;
+                margin-top: 1.5rem;
 
                 .price{
                     margin-right: auto;
@@ -425,6 +425,10 @@ section{
                 margin-top: 1rem;
                 font-size: 1.8rem;
                 color: $--light-color;
+
+                span{
+                    color: $--red;
+                }
             }
         }
     }
