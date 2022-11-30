@@ -414,6 +414,17 @@ section{
                 height: 4.3rem;
                 cursor: pointer;
                 font-size: 2rem;
+
+                &:hover{
+                    background-color: $--black;
+                    color: $--white;
+                }
+            }
+
+            .sub-total{
+                margin-top: 1rem;
+                font-size: 1.8rem;
+                color: $--light-color;
             }
         }
     }

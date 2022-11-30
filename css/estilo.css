@@ -454,6 +454,17 @@ section {
   font-size: 2rem;
 }
 
+.products .box-container .box .fa-times:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+.products .box-container .box .sub-total {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  color: #777;
+}
+
 .products .more-btn {
   margin-top: 2rem;
   text-align: center;
