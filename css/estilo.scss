@@ -298,9 +298,20 @@ section{
         align-items: center;
         gap: 2rem;
         flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 3rem;
 
         p{
             font-size: 2rem;
+            color: $--light-color;
+
+            span{
+                color: $--red;
+            }
+        }
+
+        .btn{
+            margin-top: 0;
         }
     }
 

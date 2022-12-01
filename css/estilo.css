@@ -325,10 +325,23 @@ section {
   gap: 2rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 3rem;
 }
 
 .products .cart-total p {
   font-size: 2rem;
+  color: #777;
+}
+
+.products .cart-total p span {
+  color: #e74c3c;
+}
+
+.products .cart-total .btn {
+  margin-top: 0;
 }
 
 .products .box-container {
