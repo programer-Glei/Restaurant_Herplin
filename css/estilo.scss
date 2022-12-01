@@ -292,6 +292,18 @@ section{
 
 /* PRODUCTS */
 .products{
+
+    .cart-total{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+
+        p{
+            font-size: 2rem;
+        }
+    }
+
     .box-container{
         display: grid;
         grid-template-columns: repeat(auto-fit, 33rem);
