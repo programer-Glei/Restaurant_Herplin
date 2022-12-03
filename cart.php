@@ -56,7 +56,7 @@
         <h1 class="title">Seu carrinho</h1>
         <div class="cart-total">
             <p>Total: <span>R$ 18,00</span> </p>
-            <a href="checkout.php" class="btn">Fazer o check-out</a>
+            <a href="chekout.php" class="btn">Revisar Pedido</a>
         </div>
         <div class="box-container">
             <form action="" method="post" class="box">
@@ -128,8 +128,3 @@
     <script src="java/script.js"></script>
 </body>
 </html>
-
-
-
-
-
