@@ -322,16 +322,15 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   border: 0.2rem solid #222;
   padding: 1.5rem;
-  align-items: center;
 }
 
 .products .cart-total p {
@@ -812,12 +811,17 @@ section {
   .home .slide .content h3 {
     font-size: 5rem;
   }
+  .products .cart-total {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .products .box-container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
   .heading h3 {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 }
 /*# sourceMappingURL=estilo.css.map */
