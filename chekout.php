@@ -58,6 +58,14 @@
             <p><span class="name">Prato principal</span> <span class="price">R$ 18,00</span></p>
             <p><span class="name">Pizza</span> <span class="price">R$ 18,00</span></p>
             <p><span class="name">Sobremesa</span> <span class="price">R$ 18,00</span></p>
+            <p class="grand-total"><span class="name">Total geral:</span> <span class="price">R$5,00</span></p>
+            <a href="cart.php" class="btn">Ver carrinho</a>
+        </div>
+        <div class="user-profile">
+            <p><i class="fas fa-user"></i> <span>Lucas Range</span> </p>
+            <p><i class="fas fa-phone"></i> <span>1234567890</span> </p>
+            <p><i class="fas fa-envelope"></i> <span>lucasrange@gmail.com</span> </p>
+            <a href="update_profile.php" class="btn">Atualizar perfil</a>
         </div>
     </section>
     <!-- steps section starts -->
