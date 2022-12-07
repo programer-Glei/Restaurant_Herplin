@@ -62,10 +62,13 @@
             <a href="cart.php" class="btn">Ver carrinho</a>
         </div>
         <div class="user-profile">
+            <h3>Suas informações</h3>
             <p><i class="fas fa-user"></i> <span>Lucas Range</span> </p>
             <p><i class="fas fa-phone"></i> <span>1234567890</span> </p>
             <p><i class="fas fa-envelope"></i> <span>lucasrange@gmail.com</span> </p>
             <a href="update_profile.php" class="btn">Atualizar perfil</a>
+            <h3>Endereço de entrega</h3>
+            <p><i class="fas fa-map-marker-alt"></i><span>Av. Prof. de freitas Leitão filho, Jardim casa grande, São Paulo - 04865-000</span></p>
         </div>
     </section>
     <!-- steps section starts -->
