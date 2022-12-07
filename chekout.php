@@ -54,22 +54,25 @@
     <!-- shopping cart section starts -->
     <section class="checkout">
         <h1 class="title">Resumo do pedido</h1>
-        <div class="cart-items">
-            <p><span class="name">Prato principal</span> <span class="price">R$ 18,00</span></p>
-            <p><span class="name">Pizza</span> <span class="price">R$ 18,00</span></p>
-            <p><span class="name">Sobremesa</span> <span class="price">R$ 18,00</span></p>
-            <p class="grand-total"><span class="name">Total geral:</span> <span class="price">R$5,00</span></p>
-            <a href="cart.php" class="btn">Ver carrinho</a>
-        </div>
-        <div class="user-profile">
-            <h3>Suas informações</h3>
-            <p><i class="fas fa-user"></i> <span>Lucas Range</span> </p>
-            <p><i class="fas fa-phone"></i> <span>1234567890</span> </p>
-            <p><i class="fas fa-envelope"></i> <span>lucasrange@gmail.com</span> </p>
-            <a href="update_profile.php" class="btn">Atualizar perfil</a>
-            <h3>Endereço de entrega</h3>
-            <p><i class="fas fa-map-marker-alt"></i><span>Av. Prof. de freitas Leitão filho, Jardim casa grande, São Paulo - 04865-000</span></p>
-        </div>
+        <form action="" method="post">
+            <div class="cart-items">
+                <p><span class="name">Prato principal</span> <span class="price">R$ 18,00</span></p>
+                <p><span class="name">Pizza</span> <span class="price">R$ 18,00</span></p>
+                <p><span class="name">Sobremesa</span> <span class="price">R$ 18,00</span></p>
+                <p class="grand-total"><span class="name">Total geral:</span> <span class="price">R$5,00</span></p>
+                <a href="cart.php" class="btn">Ver carrinho</a>
+            </div>
+            <div class="user-profile">
+                <h3>Suas informações</h3>
+                <p><i class="fas fa-user"></i> <span>Lucas Range</span> </p>
+                <p><i class="fas fa-phone"></i> <span>1234567890</span> </p>
+                <p><i class="fas fa-envelope"></i> <span>lucasrange@gmail.com</span> </p>
+                <a href="update_profile.php" class="btn">Atualizar perfil</a>
+                <h3>Endereço de entrega</h3>
+                <p><i class="fas fa-map-marker-alt"></i><span>Av. Prof. de freitas Leitão filho, Jardim casa grande, São Paulo - 04865-000</span></p>
+                <a href="update_address.php" class="btn">Atualizar endereço</a>
+            </div>
+        </form>
     </section>
     <!-- steps section starts -->
     <!-- reviews section starts -->
