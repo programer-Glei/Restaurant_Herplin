@@ -71,6 +71,10 @@
                 <h3>Endereço de entrega</h3>
                 <p><i class="fas fa-map-marker-alt"></i><span>Av. Prof. de freitas Leitão filho, Jardim casa grande, São Paulo - 04865-000</span></p>
                 <a href="update_address.php" class="btn">Atualizar endereço</a>
+                <select name="method" id="" class="box" required>
+                    <option value="" disabled selected>Método de pagamento</option>
+                    <option value="cash on delivery">Dinheiro na entrega</option>
+                </select>
             </div>
         </form>
     </section>
