@@ -705,12 +705,14 @@ section{
 
         h3{
             font-size: 2.5rem;
-            margin-bottom: 1rem;
+            padding: 2rem 0;
+            color: $--black;
         }
 
         .cart-items{
             background-color: $--black;
             padding: 2rem;
+            padding-top: 0;
 
             h3{
                 color: $--white;
@@ -732,6 +734,23 @@ section{
                 .price{
                     color: $--yellow;
                 }
+            }
+
+            .grand-total{
+                background-color: $--white;
+                padding: 0.5rem 1.5rem;
+
+                .price{
+                    color: $--red;
+                }
+            }
+        }
+
+        .user-profile{
+
+            p{
+                font-size: 2rem;
+                line-height: 1.5;
             }
         }
     }

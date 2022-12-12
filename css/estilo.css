@@ -760,12 +760,14 @@ section {
 
 .checkout form h3 {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  padding: 2rem 0;
+  color: #222;
 }
 
 .checkout form .cart-items {
   background-color: #222;
   padding: 2rem;
+  padding-top: 0;
 }
 
 .checkout form .cart-items h3 {
@@ -794,6 +796,20 @@ section {
 
 .checkout form .cart-items p .price {
   color: #fed330;
+}
+
+.checkout form .cart-items .grand-total {
+  background-color: #fff;
+  padding: 0.5rem 1.5rem;
+}
+
+.checkout form .cart-items .grand-total .price {
+  color: #e74c3c;
+}
+
+.checkout form .user-profile p {
+  font-size: 2rem;
+  line-height: 1.5;
 }
 
 /* ANIMATION */
