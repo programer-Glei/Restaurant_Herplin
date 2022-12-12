@@ -56,6 +56,7 @@
         <h1 class="title">Resumo do pedido</h1>
         <form action="" method="post">
             <div class="cart-items">
+                <h3>Itens do carrinho</h3>
                 <p><span class="name">Prato principal</span> <span class="price">R$ 18,00</span></p>
                 <p><span class="name">Pizza</span> <span class="price">R$ 18,00</span></p>
                 <p><span class="name">Sobremesa</span> <span class="price">R$ 18,00</span></p>
@@ -74,6 +75,9 @@
                 <select name="method" id="" class="box" required>
                     <option value="" disabled selected>Método de pagamento</option>
                     <option value="cash on delivery">Dinheiro na entrega</option>
+                    <option value="cash on delivery">Dinheiro na entrega</option>
+                    <option value="paytm">Paytm</option>
+                    <option value="paypal">Paypal</option>
                 </select>
             </div>
         </form>
