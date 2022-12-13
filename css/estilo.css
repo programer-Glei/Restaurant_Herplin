@@ -810,6 +810,24 @@ section {
 .checkout form .user-profile p {
   font-size: 2rem;
   line-height: 1.5;
+  padding: 1rem 0;
+}
+
+.checkout form .user-profile p i {
+  color: #777;
+  margin-right: 1rem;
+}
+
+.checkout form .user-profile p span {
+  color: #222;
+}
+
+.checkout form .user-profile .box {
+  width: 100%;
+  border: 0.2rem solid #222;
+  padding: 1.4rem;
+  margin-top: 1rem;
+  font-size: 1.8rem;
 }
 
 /* ANIMATION */
