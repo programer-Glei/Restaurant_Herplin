@@ -79,7 +79,7 @@
                     <option value="paytm">Paytm</option>
                     <option value="paypal">Paypal</option>
                 </select>
-                <input type="submit" value="Fazer pedido" class="btn" style="width:100%;background:$--black;color:$--white;">
+                <input type="submit" value="Fazer pedido" class="btn" style="width:100%;background:#222;color:#fff;">
             </div>
         </form>
     </section>
