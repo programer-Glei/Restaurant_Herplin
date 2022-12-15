@@ -53,35 +53,16 @@
 
     <!-- shopping cart section starts -->
     <section class="checkout">
-        <h1 class="title">Resumo do pedido</h1>
-        <form action="" method="post">
-            <div class="cart-items">
-                <h3>Itens do carrinho</h3>
-                <p><span class="name">Prato principal</span> <span class="price">R$ 18,00</span></p>
-                <p><span class="name">Pizza</span> <span class="price">R$ 18,00</span></p>
-                <p><span class="name">Sobremesa</span> <span class="price">R$ 18,00</span></p>
-                <p class="grand-total"><span class="name">Total geral:</span> <span class="price">R$5,00</span></p>
-                <a href="cart.php" class="btn">Ver carrinho</a>
+        <h1 class="title">Seus pedidos</h1>
+        <div class="box-container">
+            <div class="box">
+                <p>Data da compra: <span>14/12/2022</span></p>
+                <p>Nome: <span>Lucas</span></p>
+                <p>Número: <span>14/12/2022</span></p>
+                <p>Email: <span>gleibson.santos05@gmail.com</span></p>
+                <p>Endereço: <span>gleibson.santos05@gmail.com</span></p>
             </div>
-            <div class="user-profile">
-                <h3>Suas informações</h3>
-                <p><i class="fas fa-user"></i> <span>Lucas Range</span> </p>
-                <p><i class="fas fa-phone"></i> <span>1234567890</span> </p>
-                <p><i class="fas fa-envelope"></i> <span>lucasrange@gmail.com</span> </p>
-                <a href="update_profile.php" class="btn">Atualizar perfil</a>
-                <h3>Endereço de entrega</h3>
-                <p><i class="fas fa-map-marker-alt"></i><span>Av. Prof. de freitas Leitão filho, Jardim casa grande, São Paulo - 04865-000</span></p>
-                <a href="update_address.php" class="btn">Atualizar endereço</a>
-                <select name="method" id="" class="box" required>
-                    <option value="" disabled selected>Método de pagamento</option>
-                    <option value="cash on delivery">Dinheiro na entrega</option>
-                    <option value="cash on delivery">Dinheiro na entrega</option>
-                    <option value="paytm">Paytm</option>
-                    <option value="paypal">Paypal</option>
-                </select>
-                <input type="submit" value="Fazer pedido" class="btn" style="width:100%;background:#222;color:#fff;">
-            </div>
-        </form>
+        </div>
     </section>
     <!-- steps section starts -->
     <!-- reviews section starts -->
