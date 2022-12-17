@@ -776,6 +776,21 @@ section{
     }
 }
 
+/* ORDERS */
+.orders{
+    .box-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        align-items: flex-start;
+
+        .box{
+            padding: 1rem 2rem;
+            border: $border;
+        }
+    }
+}
+
 
 /* ANIMATION */
 @keyframes fadeIn {

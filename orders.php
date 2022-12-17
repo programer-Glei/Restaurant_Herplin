@@ -52,15 +52,17 @@
     </div>
 
     <!-- shopping cart section starts -->
-    <section class="checkout">
+    <section class="orders">
         <h1 class="title">Seus pedidos</h1>
         <div class="box-container">
             <div class="box">
                 <p>Data da compra: <span>14/12/2022</span></p>
                 <p>Nome: <span>Lucas</span></p>
-                <p>Número: <span>14/12/2022</span></p>
+                <p>Número: <span>81998991803</span></p>
                 <p>Email: <span>gleibson.santos05@gmail.com</span></p>
                 <p>Endereço: <span>gleibson.santos05@gmail.com</span></p>
+                <p>Forma de pagamento: <span>Dinheiro na entrega</span></p>
+                <p>Status do pagamento: <span style="color: red;">Pendente</span></p>
             </div>
         </div>
     </section>

@@ -826,8 +826,27 @@ section {
   width: 100%;
   border: 0.2rem solid #222;
   padding: 1.4rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
   font-size: 1.8rem;
+}
+
+/* ORDERS */
+.orders .box-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.5rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.orders .box-container .box {
+  padding: 1rem 2rem;
+  border: 0.2rem solid #222;
 }
 
 /* ANIMATION */
