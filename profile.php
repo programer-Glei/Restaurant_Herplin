@@ -49,6 +49,7 @@
     <!-- shopping cart section starts -->
     <section class="user-details">
         <div class="user">
+            <img src="img/user-icon.png" alt="">
             <p><i class="fas fa-user"></i> <span>Lucas Range</span> </p>
             <p><i class="fas fa-phone"></i> <span>1234567890</span> </p>
             <p><i class="fas fa-envelope"></i> <span>lucasrange@gmail.com</span> </p>
