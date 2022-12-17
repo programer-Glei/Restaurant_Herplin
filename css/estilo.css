@@ -847,6 +847,20 @@ section {
 .orders .box-container .box {
   padding: 1rem 2rem;
   border: 0.2rem solid #222;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.orders .box-container .box p {
+  line-height: 1.5;
+  margin: 1rem 0;
+  font-size: 2rem;
+  color: #777;
+}
+
+.orders .box-container .box p span {
+  color: #222;
 }
 
 /* ANIMATION */
