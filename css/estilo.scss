@@ -828,7 +828,17 @@ section{
         }
 
         p{
-            margin-top: 1rem;
+            margin-top: 1.5rem;
+            font-size: 2rem;
+            color: $--light-color;
+
+            a{
+                color: $--black;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
         }
     }
 }
