@@ -49,6 +49,7 @@
     <!-- shopping cart section starts -->
     <section class="form-container">
         <form action="" method="post">
+            <h3>Minha conta</h3>
             <input type="email" name="email" id="" class="box" required placeholder="Digite seu email" maxlenght="50" oninput="this.value.replace(/\s/g,'')">
             <input type="password" name="pass" id="" class="box" required placeholder="Digite sua senha" maxlenght="50" oninput="this.value.replace(/\s/g,'')">
             <input type="submit" class="btn" value="Entrar">

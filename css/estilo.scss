@@ -803,6 +803,36 @@ section{
     }
 }
 
+/* PAGE LOGIN */
+.form-container{
+    form{
+        border: $border;
+        margin: 0 auto;
+        max-width: 50rem;
+        padding: 2rem;
+        text-align: center;
+
+        .box{
+            margin: 0.7rem 0;
+            width: 100%;
+            border: $border;
+            padding: 1.4rem;
+            font-size: 1.8rem;
+            color: $--black;
+        }
+
+        h3{
+            font-size: 2.5rem;
+            color: $--black;
+            margin-bottom:1rem;
+        }
+
+        p{
+            margin-top: 1rem;
+        }
+    }
+}
+
 
 /* ANIMATION */
 @keyframes fadeIn {

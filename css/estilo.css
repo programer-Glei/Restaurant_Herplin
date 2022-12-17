@@ -863,6 +863,34 @@ section {
   color: #222;
 }
 
+/* PAGE LOGIN */
+.form-container form {
+  border: 0.2rem solid #222;
+  margin: 0 auto;
+  max-width: 50rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.form-container form .box {
+  margin: 0.7rem 0;
+  width: 100%;
+  border: 0.2rem solid #222;
+  padding: 1.4rem;
+  font-size: 1.8rem;
+  color: #222;
+}
+
+.form-container form h3 {
+  font-size: 2.5rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.form-container form p {
+  margin-top: 1rem;
+}
+
 /* ANIMATION */
 @-webkit-keyframes fadeIn {
   0% {
