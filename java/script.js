@@ -27,7 +27,7 @@ function loader(){
 // so 2000 = 2 seconds
 
 function fadeOut(){
-    setInterval(loader,2000)
+    setInterval(loader, 2000)
 }
 
-window.onload = fadeOut
+window.onload = fadeOut();

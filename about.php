@@ -196,6 +196,10 @@
         </section>
     </footer>
 
+    <div class="loader">
+        <img src="img/loader.gif" alt="">
+    </div>
+
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
     <!-- custom js file link-->
