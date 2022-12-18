@@ -97,6 +97,10 @@
         </section>
     </footer>
 
+    <div class="loader">
+        <img src="img/loader.gif" alt="">
+    </div>
+
     <!-- custom js file link-->
     <script src="java/script.js"></script>
 </body>
