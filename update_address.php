@@ -49,7 +49,12 @@
     <!-- shopping cart section starts -->
     <section class="form-container">
         <form action="" method="post">
-            <h3>Seu endereç</h3>
+            <h3>Seu endereço</h3>
+            <input type="text" name="street" class="box" placeholder="Nome da rua" required maxlength="50">
+            <input type="text" name="flat" class="box" placeholder="Número da casa ou apartamento" required maxlength="50">
+            <input type="text" name="city" class="box" placeholder="Nome da sua cidade" required maxlength="50">
+            <input type="text" name="state" class="box" placeholder="Nome do seu estado" required maxlength="50">
+            <input type="text" name="cep" class="box" placeholder="Seu CEP" required maxlength="50">
             <input type="submit" class="btn" value="Salvar endereço" name="submit">
         </form>
     </section>

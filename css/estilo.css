@@ -914,6 +914,7 @@ section {
   height: 20rem;
   -o-object-fit: contain;
      object-fit: contain;
+  margin-bottom: 1rem;
 }
 
 .user-details .user p {
@@ -929,6 +930,33 @@ section {
 .user-details .user p i {
   margin-right: 1rem;
   color: #777;
+}
+
+.user-details .user .address {
+  margin-top: 1.5rem;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.loader img {
+  height: 25rem;
 }
 
 /* ANIMATION */
