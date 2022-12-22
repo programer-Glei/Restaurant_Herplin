@@ -27,7 +27,9 @@
 
             <div class="icons">
                 <?php
-                    $count_user_cart_items = $conn->prepare();
+                    $count_user_cart_items = $conn->prepare("SELECT * FROM `cart` WHERE user_id = ?");
+                    $count_user_cart_items->execute([$user_id]);
+                    $total_user_cart_items = $count_user_cart_items->rowCount();
                 ?>
                 <a href="search.php"><i class="fas fa-search"></i></a>
                 <a href="cart.php"><i class="fas fa-shopping-cart"></i> <span>(3)</span> </a>

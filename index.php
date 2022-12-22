@@ -29,7 +29,8 @@
     <title>Restaurante Herplin</title>
 </head>
 <body>
-    
+    <!-- header section starts -->
+    <?php include 'components/userheader.php' ?>
 
     <!-- home section starts -->
     <section class="home">
