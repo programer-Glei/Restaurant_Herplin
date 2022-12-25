@@ -30,7 +30,7 @@
 </head>
 <body>
     <!-- header section starts -->
-    <?php include 'components/userheader.php' ?>
+    <?php include 'components/user_header.php' ?>
 
     <!-- home section starts -->
     <section class="home">
