@@ -48,15 +48,16 @@
                 <p class="name"><?= $fetch_profile['name']; ?></p>
                 <div class="flex">
                     <a href="profile.php" class="btn">Perfil</a>
-                    <a href="components/user_logout.php" class="delete-btn">Sair</a>
+                    <a href="components/user_logout.php" class="delete-btn" onclick="return confirm('Sair deste site?')">Sair</a>
                 </div>
 
                 <?php
-                    }else{
-
-                    }
+                    }else{ 
                 ?>
-                <p class="acconut"><a href="login.php">Conecte-se</a> ou <a href="register.php">Cadastre-se</a> </p>
+                <p class="acconut"><a href="login.php">Faça login</a> ou <a href="register.php">Cadastre-se</a> </p>
+                <?php
+                     }
+                ?>
             </div>
 
         </section>
