@@ -38,11 +38,24 @@
             </div>
 
             <div class="profile">
-                <p class="name">Gleibinho</p>
+                <?php
+                    $select_profile = $conn->prepare("SELECT * FROM `users` WHERE id = ?");
+                    $select_profile->execute([$user_id]);
+                    if($select_profile->rowCount() > 0){
+                        $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
+                ?>
+
+                <p class="name"><?= $fetch_profile['name']; ?></p>
                 <div class="flex">
                     <a href="profile.php" class="btn">Perfil</a>
-                    <a href="#" class="delete-btn">Sair</a>
+                    <a href="components/user_logout.php" class="delete-btn">Sair</a>
                 </div>
+
+                <?php
+                    }else{
+
+                    }
+                ?>
                 <p class="acconut"><a href="login.php">Conecte-se</a> ou <a href="register.php">Cadastre-se</a> </p>
             </div>
 
