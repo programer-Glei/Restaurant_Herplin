@@ -75,19 +75,19 @@
     <section class="category">
         <h1 class="title">Compre por categoria</h1>
         <div class="box-container">
-            <a href="" class="box">
+            <a href="category.php?category=fast_food" class="box">
                 <img src="img/cat-1.png" alt="">
                 <h3>Comida rápida</h3>
             </a>
-            <a href="" class="box">
+            <a href="category.php?category=main_dish" class="box">
                 <img src="img/cat-2.png" alt="">
                 <h3>Pratos principais</h3>
             </a>
-            <a href="" class="box">
+            <a href="category.php?category=drinks" class="box">
                 <img src="img/cat-3.png" alt="">
                 <h3>Bebidas</h3>
             </a>
-            <a href="" class="box">
+            <a href="category.php?category=dessert" class="box">
                 <img src="img/cat-4.png" alt="">
                 <h3>Sobremesas</h3>
             </a>
