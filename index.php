@@ -98,6 +98,20 @@
     <section class="products">
         <h1 class="title">Últimos pedidos</h1>
         <div class="box-container">
+            <?php
+                $select_products = $conn->prepare("SELECT * FROM `products` LIMIT 6");
+                $select_products->execute();
+                if($select_products->rowCount() > 0){
+                    while($fetch_products = $select_products->fetch(PDO::FETCH_ASSOC)){
+
+                    }
+            ?>
+
+            <?php
+                }else{
+
+                }
+            ?>
             <form action="" method="post" class="box">
                 <button type="submit" class="fas fa-eye" name="quick_view"></button>
                 <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
