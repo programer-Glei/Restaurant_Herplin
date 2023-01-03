@@ -103,14 +103,6 @@
                 $select_products->execute();
                 if($select_products->rowCount() > 0){
                     while($fetch_products = $select_products->fetch(PDO::FETCH_ASSOC)){
-
-                    }
-            ?>
-
-            <?php
-                }else{
-
-                }
             ?>
             <form action="" method="post" class="box">
                 <button type="submit" class="fas fa-eye" name="quick_view"></button>
@@ -123,6 +115,12 @@
                     <input type="number" name="qty" id="" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
                 </div>
             </form>
+            <?php
+            }
+                }else{
+
+                }
+            ?>
             <form action="" method="post" class="box">
                 <button type="submit" class="fas fa-eye" name="quick_view"></button>
                 <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
