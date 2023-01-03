@@ -905,6 +905,17 @@ section{
     html{
         font-size: 55%;
     }
+
+    .home{
+        .slide{
+            .content{
+    
+                h3{
+                    font-size: 4rem;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width:768px){
@@ -932,6 +943,17 @@ section{
 
                 &.active{
                     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                }
+            }
+        }
+    }
+
+    .home{
+        .slide{
+            .content{
+    
+                h3{
+                    font-size: 3.5rem;
                 }
             }
         }
