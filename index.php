@@ -220,13 +220,17 @@
     <script src="java/script.js"></script>
 
     <script>
-        var swiper = new Swiper(".home-slide",{
+        let swiper = new Swiper(".home-slide",{
             loop:true,
             grabCursor:true,
             effect: "flip",
             pagination:{
                 el:".swiper-pagination",
                 clickable: true,
+            },
+            autoplay:{
+                delay: 2500,
+                disableOnInteraction: false
             }
         });
     </script>
