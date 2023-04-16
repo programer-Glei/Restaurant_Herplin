@@ -47,10 +47,14 @@
 
                     }
                 }else{
-                    
+
                 }
             ?>
             <form action="" method="post" class="box">
+                <input type="hidden" name="pid" value="<?=$fetch_products['id'];?>">
+                <input type="hidden" name="name" value="<?=$fetch_products['name'];?>">
+                <input type="hidden" name="price" value="<?=$fetch_products['price'];?>">
+                <input type="hidden" name="image" value="<?=$fetch_products['image'];?>">
                 <button type="submit" class="fas fa-eye" name="quick_view"></button>
                 <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
                 <img src="img/burger-1.png" alt="imagem de Hamburguer">
