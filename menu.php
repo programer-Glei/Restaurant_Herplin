@@ -55,13 +55,13 @@
                 <input type="hidden" name="name" value="<?=$fetch_products['name'];?>">
                 <input type="hidden" name="price" value="<?=$fetch_products['price'];?>">
                 <input type="hidden" name="image" value="<?=$fetch_products['image'];?>">
-                <button type="submit" class="fas fa-eye" name="quick_view"></button>
+                <a href="quick_view.php?pid=<?=$fetch_products['id'];?>" class="fas fa-eye"></a>
                 <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
-                <img src="img/burger-1.png" alt="imagem de Hamburguer">
-                <a href="#" class="cat">Comida rápida</a>
-                <div class="name">X tudo</div>
+                <img src="uploaded_img/<?=$fetch_products['image'];?>" alt="">
+                <a href="category.php?category=<?=$fetch_products['category'];?>" class="cat"><?=$fetch_products['category'];?></a>
+                <div class="name"><?=$fetch_products['name'];?></div>
                 <div class="flex">
-                    <div class="price"> <span>R$</span>15 </div>
+                    <div class="price"> <span>R$ </span><?=$fetch_products['price']?> </div>
                     <input type="number" name="qty" id="" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
                 </div>
             </form>
