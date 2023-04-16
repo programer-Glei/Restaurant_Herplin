@@ -1,3 +1,17 @@
+<?php
+    include 'components/connect.php';
+
+    session_start();
+
+    if(isset($_SESSION['user_id'])){
+        $user_id = $_SESSION['user_id'];
+    }else{
+        $user_id = '';
+    }
+
+    include 'components/add_cart.php';
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -14,37 +28,8 @@
     <title>Menu</title>
 </head>
 <body>
-    <header class="header">
 
-        <section class="flex">
-            <a href="index.php" class="logo">Yum-yum</a>
-
-            <nav class="navbar">
-                <a href="index.php" class="logo">Home</a>
-                <a href="about.php" class="logo">Sobre nós</a>
-                <a href="menu.php" class="logo">Menu</a>
-                <a href="orders.php" class="logo">Vendas</a>
-                <a href="contact.php" class="logo">Contato</a>
-            </nav>
-
-            <div class="icons">
-                <a href="search.php"><i class="fas fa-search"></i></a>
-                <a href="cart.php"><i class="fas fa-shopping-cart"></i> <span>(3)</span> </a>
-                <div id="user-btn" class="fas fa-user"></div>
-                <div id="menu-btn" class="fas fa-bars"></div>
-            </div>
-
-            <div class="profile">
-                <p class="name">Gleibinho</p>
-                <div class="flex">
-                    <a href="profile.php" class="btn">Perfil</a>
-                    <a href="#" class="delete-btn">Sair</a>
-                </div>
-                <p class="acconut"><a href="login.php">Conecte-se</a> ou <a href="register.php">Cadastre-se</a> </p>
-            </div>
-
-        </section>
-    </header>
+    <?php include 'components/use_header.php'; ?>
 
     <div class="heading">
         <h3>Nosso cardápio</h3>
@@ -54,243 +39,23 @@
     <section class="products">
         <h1 class="title">Cardapio Completo</h1>
         <div class="box-container">
+            <?php
+                $select_products = $conn->prepare("SELECT * FROM `products`");
+                $select_products->execute();
+                if($select_products->rowCount() > 0){
+                    while($fetch_products = $select_products->fetch(PDO::FETCH_ASSOC)){
+
+                    }
+                }else{
+                    
+                }
+            ?>
             <form action="" method="post" class="box">
                 <button type="submit" class="fas fa-eye" name="quick_view"></button>
                 <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
                 <img src="img/burger-1.png" alt="imagem de Hamburguer">
                 <a href="#" class="cat">Comida rápida</a>
                 <div class="name">X tudo</div>
-                <div class="flex">
-                    <div class="price"> <span>R$</span>15 </div>
-                    <input type="number" name="qty" id="" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
-                </div>
-            </form>
-            <form action="" method="post" class="box">
-                <button type="submit" class="fas fa-eye" name="quick_view"></button>
-                <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
-                <img src="img/dish-1.png" alt="imagem de Hamburguer">
-                <a href="#" class="cat">Refeiçao Completa</a>
-                <div class="name">Macarronada</div>
-                <div class="flex">
-                    <div class="price"> <span>R$</span>15 </div>
-                    <input type="number" name="qty" id="" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
-                </div>
-            </form>
-            <form action="" method="post" class="box">
-                <button type="submit" class="fas fa-eye" name="quick_view"></button>
-                <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
-                <img src="img/dessert-1.png" alt="imagem de Hamburguer">
-                <a href="#" class="cat">Sobremesas</a>
-                <div class="name">Milshake</div>
-                <div class="flex">
-                    <div class="price"> <span>R$</span>15 </div>
-                    <input type="number" name="qty" id="" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
-                </div>
-            </form>
-            <form action="" method="post" class="box">
-                <button type="submit" class="fas fa-eye" name="quick_view"></button>
-                <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
-                <img src="img/drink-1.png" alt="imagem de Hamburguer">
-                <a href="#" class="cat">Bebidas</a>
-                <div class="name">Diversos Sucos</div>
-                <div class="flex">
-                    <div class="price"> <span>R$</span>15 </div>
-                    <input type="number" name="qty" id="" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
-                </div>
-            </form>
-            <form action="" method="post" class="box">
-                <button type="submit" class="fas fa-eye" name="quick_view"></button>
-                <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
-                <img src="img/pizza-1.png" alt="imagem de Hamburguer">
-                <a href="#" class="cat">Pizza</a>
-                <div class="name">Pizza de Pepino</div>
-                <div class="flex">
-                    <div class="price"> <span>R$</span>15 </div>
-                    <input type="number" name="qty" id="" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
-                </div>
-            </form>
-            <form action="" method="post" class="box">
-                <button type="submit" class="fas fa-eye" name="quick_view"></button>
-                <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
-                <img src="img/dish-2.png" alt="imagem de Hamburguer">
-                <a href="#" class="cat">Refeiçao Completa</a>
-                <div class="name">Macarrão e legumes</div>
-                <div class="flex">
-                    <div class="price"> <span>R$</span>15 </div>
-                    <input type="number" name="qty" id="" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
-                </div>
-            </form>
-            <form action="" method="post" class="box">
-                <button type="submit" class="fas fa-eye" name="quick_view"></button>
-                <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
-                <img src="img/pizza-2.png" alt="imagem de Hamburguer">
-                <a href="#" class="cat">Pizza</a>
-                <div class="name">Peperone</div>
-                <div class="flex">
-                    <div class="price"> <span>R$</span>15 </div>
-                    <input type="number" name="qty" id="" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
-                </div>
-            </form>
-            <form action="" method="post" class="box">
-                <button type="submit" class="fas fa-eye" name="quick_view"></button>
-                <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
-                <img src="img/burger-2.png" alt="imagem de Hamburguer">
-                <a href="#" class="cat">Comida rápida</a>
-                <div class="name">X egges</div>
-                <div class="flex">
-                    <div class="price"> <span>R$</span>15 </div>
-                    <input type="number" name="qty" id="" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
-                </div>
-            </form>
-            <form action="" method="post" class="box">
-                <button type="submit" class="fas fa-eye" name="quick_view"></button>
-                <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
-                <img src="img/drink-2.png" alt="imagem de Hamburguer">
-                <a href="#" class="cat">Bebida</a>
-                <div class="name">Chocolate</div>
-                <div class="flex">
-                    <div class="price"> <span>R$</span>15 </div>
-                    <input type="number" name="qty" id="" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
-                </div>
-            </form>
-            <form action="" method="post" class="box">
-                <button type="submit" class="fas fa-eye" name="quick_view"></button>
-                <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
-                <img src="img/dessert-2.png" alt="imagem de Hamburguer">
-                <a href="#" class="cat">Sobremesas</a>
-                <div class="name">Bolo Chocolate</div>
-                <div class="flex">
-                    <div class="price"> <span>R$</span>15 </div>
-                    <input type="number" name="qty" id="" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
-                </div>
-            </form>
-            <form action="" method="post" class="box">
-                <button type="submit" class="fas fa-eye" name="quick_view"></button>
-                <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
-                <img src="img/pizza-3.png" alt="imagem de Hamburguer">
-                <a href="#" class="cat">Pizza</a>
-                <div class="name">Bolo Chocolate</div>
-                <div class="flex">
-                    <div class="price"> <span>R$</span>15 </div>
-                    <input type="number" name="qty" id="" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
-                </div>
-            </form>
-            <form action="" method="post" class="box">
-                <button type="submit" class="fas fa-eye" name="quick_view"></button>
-                <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
-                <img src="img/pizza-4.png" alt="imagem de Hamburguer">
-                <a href="#" class="cat">Pizza</a>
-                <div class="name">Bolo Chocolate</div>
-                <div class="flex">
-                    <div class="price"> <span>R$</span>15 </div>
-                    <input type="number" name="qty" id="" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
-                </div>
-            </form>
-            <form action="" method="post" class="box">
-                <button type="submit" class="fas fa-eye" name="quick_view"></button>
-                <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
-                <img src="img/pizza-5.png" alt="imagem de Hamburguer">
-                <a href="#" class="cat">Pizza</a>
-                <div class="name">Bolo Chocolate</div>
-                <div class="flex">
-                    <div class="price"> <span>R$</span>15 </div>
-                    <input type="number" name="qty" id="" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
-                </div>
-            </form>
-            <form action="" method="post" class="box">
-                <button type="submit" class="fas fa-eye" name="quick_view"></button>
-                <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
-                <img src="img/dessert-3.png" alt="imagem de Hamburguer">
-                <a href="#" class="cat">Sobremesas</a>
-                <div class="name">Bolo Chocolate</div>
-                <div class="flex">
-                    <div class="price"> <span>R$</span>15 </div>
-                    <input type="number" name="qty" id="" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
-                </div>
-            </form>
-            <form action="" method="post" class="box">
-                <button type="submit" class="fas fa-eye" name="quick_view"></button>
-                <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
-                <img src="img/dessert-4.png" alt="imagem de Hamburguer">
-                <a href="#" class="cat">Sobremesas</a>
-                <div class="name">Bolo Chocolate</div>
-                <div class="flex">
-                    <div class="price"> <span>R$</span>15 </div>
-                    <input type="number" name="qty" id="" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
-                </div>
-            </form>
-            <form action="" method="post" class="box">
-                <button type="submit" class="fas fa-eye" name="quick_view"></button>
-                <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
-                <img src="img/dessert-5.png" alt="imagem de Hamburguer">
-                <a href="#" class="cat">Sobremesas</a>
-                <div class="name">Bolo Chocolate</div>
-                <div class="flex">
-                    <div class="price"> <span>R$</span>15 </div>
-                    <input type="number" name="qty" id="" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
-                </div>
-            </form>
-            <form action="" method="post" class="box">
-                <button type="submit" class="fas fa-eye" name="quick_view"></button>
-                <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
-                <img src="img/dessert-6.png" alt="imagem de Hamburguer">
-                <a href="#" class="cat">Sobremesas</a>
-                <div class="name">Bolo Chocolate</div>
-                <div class="flex">
-                    <div class="price"> <span>R$</span>15 </div>
-                    <input type="number" name="qty" id="" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
-                </div>
-            </form>
-            <form action="" method="post" class="box">
-                <button type="submit" class="fas fa-eye" name="quick_view"></button>
-                <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
-                <img src="img/dish-3.png" alt="imagem de Hamburguer">
-                <a href="#" class="cat">Sobremesas</a>
-                <div class="name">Bolo Chocolate</div>
-                <div class="flex">
-                    <div class="price"> <span>R$</span>15 </div>
-                    <input type="number" name="qty" id="" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
-                </div>
-            </form>
-            <form action="" method="post" class="box">
-                <button type="submit" class="fas fa-eye" name="quick_view"></button>
-                <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
-                <img src="img/dish-4.png" alt="imagem de Hamburguer">
-                <a href="#" class="cat">Sobremesas</a>
-                <div class="name">Bolo Chocolate</div>
-                <div class="flex">
-                    <div class="price"> <span>R$</span>15 </div>
-                    <input type="number" name="qty" id="" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
-                </div>
-            </form>
-            <form action="" method="post" class="box">
-                <button type="submit" class="fas fa-eye" name="quick_view"></button>
-                <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
-                <img src="img/drink-3.png" alt="imagem de Hamburguer">
-                <a href="#" class="cat">Bebidas</a>
-                <div class="name">Bolo Chocolate</div>
-                <div class="flex">
-                    <div class="price"> <span>R$</span>15 </div>
-                    <input type="number" name="qty" id="" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
-                </div>
-            </form>
-            <form action="" method="post" class="box">
-                <button type="submit" class="fas fa-eye" name="quick_view"></button>
-                <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
-                <img src="img/drink-4.png" alt="imagem de Hamburguer">
-                <a href="#" class="cat">Bebidas</a>
-                <div class="name">Bolo Chocolate</div>
-                <div class="flex">
-                    <div class="price"> <span>R$</span>15 </div>
-                    <input type="number" name="qty" id="" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
-                </div>
-            </form>
-            <form action="" method="post" class="box">
-                <button type="submit" class="fas fa-eye" name="quick_view"></button>
-                <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
-                <img src="img/drink-5.png" alt="imagem de Hamburguer">
-                <a href="#" class="cat">Bebidas</a>
-                <div class="name">Bolo Chocolate</div>
                 <div class="flex">
                     <div class="price"> <span>R$</span>15 </div>
                     <input type="number" name="qty" id="" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
