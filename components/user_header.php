@@ -1,5 +1,6 @@
 <?php
-
+    header('Content-Type: text/html; charset=utf-8');
+    
     if(isset($message)){
         foreach($message as $message){
             echo '

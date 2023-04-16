@@ -1,4 +1,5 @@
 <?php
+    header('Content-Type: text/html; charset=utf-8');
     include 'components/connect.php';
 
     session_start();
@@ -29,7 +30,7 @@
 </head>
 <body>
 
-    <?php include 'components/use_header.php'; ?>
+    <?php include 'components/user_header.php'; ?>
 
     <div class="heading">
         <h3>Nosso cardápio</h3>
@@ -44,11 +45,6 @@
                 $select_products->execute();
                 if($select_products->rowCount() > 0){
                     while($fetch_products = $select_products->fetch(PDO::FETCH_ASSOC)){
-
-                    }
-                }else{
-
-                }
             ?>
             <form action="" method="post" class="box">
                 <input type="hidden" name="pid" value="<?=$fetch_products['id'];?>">
@@ -65,6 +61,12 @@
                     <input type="number" name="qty" id="" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
                 </div>
             </form>
+            <?php
+                      }
+                    }else{
+                        echo '<p class="empty">Nehum produto adicionado!</p>';
+                    }
+            ?>
         </div>
     </section>
     <!-- steps section starts -->
