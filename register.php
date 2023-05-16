@@ -16,6 +16,22 @@
         $email = filter_var($email, FILTER_SANITIZE_STRING);
         $number = $_POST['number'];
         $number = filter_var($number, FILTER_SANITIZE_STRING);
+        $pass = $_POST['pass'];
+        $pass = filter_var($pass, FILTER_SANITIZE_STRING);
+        $cpass = $_POST['cpass'];
+        $cpass = filter_var($cpass, FILTER_SANITIZE_STRING);
+
+        $select_user = $conn->prepare("SELECT * FROM `users` WHERE email = ? OR number = ?");
+        $select_user->execute([$email, $number]);
+        $row = $select_user->fetch(PDO::FETCH_ASSOC);
+
+        if($select_user->rowCount() > 0){
+            $message[] = 'E-mail ou número já existe!';
+        }else{
+            if($pass != $cpass){
+                $message[] = 'A senha não está igual!';
+            }
+        }
     }
 ?>
 
