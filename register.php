@@ -61,37 +61,9 @@
     <title>Criar uma conta</title>
 </head>
 <body>
-    <header class="header">
-
-        <section class="flex">
-            <a href="index.php" class="logo">Yum-yum</a>
-
-            <nav class="navbar">
-                <a href="index.php" class="logo">Home</a>
-                <a href="about.php" class="logo">Sobre nós</a>
-                <a href="menu.php" class="logo">Menu</a>
-                <a href="orders.php" class="logo">Vendas</a>
-                <a href="contact.php" class="logo">Contato</a>
-            </nav>
-
-            <div class="icons">
-                <a href="search.php"><i class="fas fa-search"></i></a>
-                <a href="cart.php"><i class="fas fa-shopping-cart"></i> <span>(3)</span> </a>
-                <div id="user-btn" class="fas fa-user"></div>
-                <div id="menu-btn" class="fas fa-bars"></div>
-            </div>
-
-            <div class="profile">
-                <p class="name">Gleibinho</p>
-                <div class="flex">
-                    <a href="profile.php" class="btn">Perfil</a>
-                    <a href="#" class="delete-btn">Sair</a>
-                </div>
-                <p class="acconut"><a href="login.php">Conecte-se</a> ou <a href="register.php">Cadastre-se</a> </p>
-            </div>
-
-        </section>
-    </header>
+    <!-- header section starts -->
+    <?php include 'components/user_header.php'; ?>
+    <!-- header section ends -->
 
     <!-- shopping cart section starts -->
     <section class="form-container">
@@ -99,6 +71,7 @@
             <h3>Registrar-se</h3>
             <input type="text" name="name" id="" class="box" required placeholder="Digite seu nome" maxlenght="50">
             <input type="email" name="email" id="" class="box" required placeholder="Digite seu email" maxlenght="50" oninput="this.value.replace(/\s/g,'')">
+            <input type="text" name="number" required placeholder="Digite seu número" class="box" maxlenght="10">
             <input type="password" name="pass" id="" class="box" required placeholder="Digite sua senha" maxlenght="50" oninput="this.value.replace(/\s/g,'')">
             <input type="password" name="cpass" id="" class="box" required placeholder="Digite sua senha novamente" maxlenght="50" oninput="this.value.replace(/\s/g,'')">
             <input type="submit" class="btn" value="Cadastrar">
