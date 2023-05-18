@@ -30,6 +30,16 @@
         }else{
             if($pass != $cpass){
                 $message[] = 'A senha não está igual!';
+            }else{
+                $insert_user = $conn->prepare("INSERT INTO `users`(name, email, number, password) VALUES(?,?,?,?)");
+                $insert_user = execute([$name, $email, $number,$cpass]);
+                $select_user = $conn->prepare("SELECT * FROM `users` WHERE email = ? AND password = ?");
+                $select_user->execute([$email, $pass]);
+                $row = $select_user->fetch(PDO::FETCH_ASSOC);
+                if($select_user->rowCount() > 0){
+                    $_SESSION['user_id'] = $row['id'];
+                    header('location:index.php');
+                }
             }
         }
     }
