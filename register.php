@@ -32,7 +32,7 @@
                 $message[] = 'A senha não está igual!';
             }else{
                 $insert_user = $conn->prepare("INSERT INTO `users`(name, email, number, password) VALUES(?,?,?,?)");
-                $insert_user = execute([$name, $email, $number,$cpass]);
+                $insert_user->execute([$name, $email, $number, $cpass]);
                 $select_user = $conn->prepare("SELECT * FROM `users` WHERE email = ? AND password = ?");
                 $select_user->execute([$email, $pass]);
                 $row = $select_user->fetch(PDO::FETCH_ASSOC);
@@ -74,7 +74,7 @@
             <input type="text" name="number" required placeholder="Digite seu número" class="box" maxlenght="10">
             <input type="password" name="pass" id="" class="box" required placeholder="Digite sua senha" maxlenght="50" oninput="this.value.replace(/\s/g,'')">
             <input type="password" name="cpass" id="" class="box" required placeholder="Digite sua senha novamente" maxlenght="50" oninput="this.value.replace(/\s/g,'')">
-            <input type="submit" class="btn" value="Cadastrar">
+            <input type="submit" class="btn" name="submit" value="Cadastrar">
             <p>Já tem uma conta?<a href="login.php">Entrar</a></p>
         </form>
     </section>
