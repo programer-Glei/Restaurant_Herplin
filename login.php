@@ -1,3 +1,27 @@
+<?php
+    header('Content-Type: text/html; charset=utf-8');
+    include 'components/connect.php';
+
+    session_start();
+
+    if(isset($_SESSION['user_id'])){
+        $user_id = $_SESSION['user_id'];
+    }else{
+        $user_id = '';
+    };
+
+    if(isset($_POST['submit'])){
+
+        $email = $_POST['email'];
+        $email = filter_var($email, FILTER_SANITIZE_STRING);
+        $pass = $_POST['pass'];
+        $pass = filter_var($pass, FILTER_SANITIZE_STRING);
+
+        $select_user = $conn->prepare("SELECT * FROM `users` WHERE email = ? AND password = ?");
+        $select_user->execute([$email, $pass]);
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -11,7 +35,7 @@
     <!-- custom css file link -->
     <link rel="stylesheet" href="css/estilo.css">
 
-    <title>Pedidos</title>
+    <title>Entrar</title>
 </head>
 <body>
     <header class="header">
