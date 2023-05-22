@@ -19,6 +19,14 @@
 
         $select_user = $conn->prepare("SELECT * FROM `users` WHERE email = ? AND password = ?");
         $select_user->execute([$email, $pass]);
+        $row = $select_user->fetch(PDO::FETCH_ASSOC);
+
+        if($select_user->rowCount() > 0){
+            $_SESSION['user_id'] = $row['id'];
+            header('location:index.php');
+        }else{
+            $message[] = 'Email ou senha errada!';
+        }
     }
 ?>
 
