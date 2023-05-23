@@ -29,37 +29,9 @@
     <title>Pedidos</title>
 </head>
 <body>
-    <header class="header">
-
-        <section class="flex">
-            <a href="index.php" class="logo">Yum-yum</a>
-
-            <nav class="navbar">
-                <a href="index.php" class="logo">Home</a>
-                <a href="about.php" class="logo">Sobre nós</a>
-                <a href="menu.php" class="logo">Menu</a>
-                <a href="orders.php" class="logo">Vendas</a>
-                <a href="contact.php" class="logo">Contato</a>
-            </nav>
-
-            <div class="icons">
-                <a href="search.php"><i class="fas fa-search"></i></a>
-                <a href="cart.php"><i class="fas fa-shopping-cart"></i> <span>(3)</span> </a>
-                <div id="user-btn" class="fas fa-user"></div>
-                <div id="menu-btn" class="fas fa-bars"></div>
-            </div>
-
-            <div class="profile">
-                <p class="name">Gleibinho</p>
-                <div class="flex">
-                    <a href="profile.php" class="btn">Perfil</a>
-                    <a href="#" class="delete-btn">Sair</a>
-                </div>
-                <p class="acconut"><a href="login.php">Conecte-se</a> ou <a href="register.php">Cadastre-se</a> </p>
-            </div>
-
-        </section>
-    </header>
+    <!-- header section starts -->
+    <?php include 'components/user_header.php'; ?>
+    <!-- header section ends -->
 
     <div class="heading">
         <h3>Pedidos</h3>
@@ -70,6 +42,17 @@
     <section class="orders">
         <h1 class="title">Seus pedidos</h1>
         <div class="box-container">
+            <?php
+                if($user_id == ''){
+                    echo '<p class="empty">Faça o login para ver seus pedidos</p>';
+                }else{
+                    $select_orders = $conn->prepare("SELECT * FROM `orders` WHERE user_id = ?");
+                    $select_orders->execute([$user_id]);
+                    if($select_orders->rowCount() > 0){
+                        while($fetch_orders = $select_orders->fetch(PDO::FETCH_ASSOC))
+                    }
+                }
+            ?>
             <div class="box">
                 <p>Data da compra: <span>14/12/2022</span></p>
                 <p>Nome: <span>Lucas</span></p>
