@@ -22,7 +22,7 @@
                 <a href="index.php" class="logo">Home</a>
                 <a href="about.php" class="logo">Sobre nós</a>
                 <a href="menu.php" class="logo">Menu</a>
-                <a href="orders.php" class="logo">Vendas</a>
+                <a href="orders.php" class="logo">Seus pedidos</a>
                 <a href="contact.php" class="logo">Contato</a>
             </nav>
 

@@ -1,3 +1,18 @@
+<?php
+    header('Content-Type: text/html; charset=utf-8');
+    include 'components/connect.php';
+
+    session_start();
+
+    if(isset($_SESSION['user_id'])){
+        $user_id = $_SESSION['user_id'];
+    }else{
+        $user_id = '';
+        header('location:index.php');
+    }
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
