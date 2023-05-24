@@ -49,19 +49,24 @@
                     $select_orders = $conn->prepare("SELECT * FROM `orders` WHERE user_id = ?");
                     $select_orders->execute([$user_id]);
                     if($select_orders->rowCount() > 0){
-                        while($fetch_orders = $select_orders->fetch(PDO::FETCH_ASSOC))
-                    }
-                }
+                        while($fetch_orders = $select_orders->fetch(PDO::FETCH_ASSOC)){
             ?>
             <div class="box">
-                <p>Data da compra: <span>14/12/2022</span></p>
-                <p>Nome: <span>Lucas</span></p>
-                <p>Número: <span>81998991803</span></p>
-                <p>Email: <span>gleibson.santos05@gmail.com</span></p>
+                <p>Data da compra: <span><?= $fetch_orders['placed_on'];?></span></p>
+                <p>Nome: <span><?=$fetch_orders['name'];?></span></p>
+                <p>Número: <span><?=$fetch_orders['number'];?></span></p>
+                <p>Email: <span><?=$fetch_orders['email'];?></span></p>
                 <p>Endereço: <span>gleibson.santos05@gmail.com</span></p>
                 <p>Forma de pagamento: <span>Dinheiro na entrega</span></p>
                 <p>Status do pagamento: <span style="color: red;">Pendente</span></p>
             </div>
+            <?php
+                       }
+                    }else{
+                        echo '<p class="empty">Nenhum pedido feito ainda!</p>';
+                    }
+                }
+            ?>
         </div>
     </section>
     <!-- steps section starts -->
