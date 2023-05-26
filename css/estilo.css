@@ -49,6 +49,19 @@ section {
   padding: 2rem;
 }
 
+.empty {
+  border: 0.2rem solid #222;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+  width: 100%;
+  font-size: 2rem;
+  color: #e74c3c;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
 .title {
   text-align: center;
   margin-bottom: 2.5rem;

@@ -7,6 +7,7 @@ $--white: #fff;
 $--black: #222;
 $--light-color: #777;
 $border: 0.2rem solid $--black;
+$box-shadow:0 0.5rem 1rem rgba(0,0,0,0.1);
 
 *{
     margin: 0; padding: 0;
@@ -49,6 +50,18 @@ section{
     margin: 0 auto;
     max-width: 1200px;
     padding: 2rem;
+}
+
+.empty{
+    border: $border;
+    border-radius: 0.5rem;
+    background-color: $--white;
+    padding: 1.5rem;
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+    color: $--red;
+    box-shadow: $box-shadow;
 }
 
 .title{
