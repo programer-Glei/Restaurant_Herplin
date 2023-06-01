@@ -79,7 +79,8 @@
                 }
             ?>
             <form action="" method="post" class="box">
-                <button type="submit" class="fas fa-eye" name="quick_view"></button>
+                <input type="hidden" name="cart_id" value="<?= $fetch_cart['id']; ?>">
+                <a href="quick_view.php?pid=<?= $fetch_cart['pid'];?>" class="fas fa-eye"></a>
                 <button type="submit" class="fas fa-times" name="delete" onclick="return confirm('delete this item?');"></button>
                 <img src="img/dish-1.png" alt="imagem de Hamburguer">
                 <a href="#" class="cat">Comida rápida</a>
