@@ -53,37 +53,9 @@
     <title>Carrinho</title>
 </head>
 <body>
-    <header class="header">
-
-        <section class="flex">
-            <a href="index.php" class="logo">Yum-yum</a>
-
-            <nav class="navbar">
-                <a href="index.php" class="logo">Home</a>
-                <a href="about.php" class="logo">Sobre nós</a>
-                <a href="menu.php" class="logo">Menu</a>
-                <a href="orders.php" class="logo">Vendas</a>
-                <a href="contact.php" class="logo">Contato</a>
-            </nav>
-
-            <div class="icons">
-                <a href="search.php"><i class="fas fa-search"></i></a>
-                <a href="cart.php"><i class="fas fa-shopping-cart"></i> <span>(3)</span> </a>
-                <div id="user-btn" class="fas fa-user"></div>
-                <div id="menu-btn" class="fas fa-bars"></div>
-            </div>
-
-            <div class="profile">
-                <p class="name">Gleibinho</p>
-                <div class="flex">
-                    <a href="profile.php" class="btn">Perfil</a>
-                    <a href="#" class="delete-btn">Sair</a>
-                </div>
-                <p class="acconut"><a href="login.php">Conecte-se</a> ou <a href="register.php">Cadastre-se</a> </p>
-            </div>
-
-        </section>
-    </header>
+    <!-- header section starts -->
+    <?php include 'components/user_header.php';?>
+    <!-- header section ends -->
 
     <div class="heading">
         <h3>Carrinho de Compras</h3>
@@ -93,11 +65,19 @@
     <!-- shopping cart section starts -->
     <section class="products">
         <h1 class="title">Seu carrinho</h1>
-        <div class="cart-total">
-            <p>Total: <span>R$ 18,00</span> </p>
-            <a href="chekout.php" class="btn">Revisar Pedido</a>
-        </div>
         <div class="box-container">
+            <?php
+                $grand_total = 0;
+                $select_cart = $conn->prepare("SELECT * FROM `cart` WHERE user_id = ?");
+                $select_cart->execute($user_id);
+                if($select_cart->rowCount() > 0){
+                    while($fetch_cart = $select_cart->fetch(PDO::FETCH_ASSOC)){
+
+                    }
+                }else{
+                    echo '<p class="empty">Seu carrinho está vazio</p>';
+                }
+            ?>
             <form action="" method="post" class="box">
                 <button type="submit" class="fas fa-eye" name="quick_view"></button>
                 <button type="submit" class="fas fa-times" name="delete" onclick="return confirm('delete this item?');"></button>
