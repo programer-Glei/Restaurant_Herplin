@@ -95,10 +95,15 @@
             ?>
 
         </div>
+        <div class="cart-total">
+            <p>Total: <span>R$<?=$grand_total?></span> </p>
+            <a href="checkout.php" class="btn <?=($grand_total> 1)?'':'disabled';?>">Comfirmar pedido</a>
+        </div>
         <div class="more-btn">
             <form action="" method="post">
-                <button type="submit" class="delete-btn" name="delete_all" onclick="return confirm('excluir tudo do carrinho?');">Deletar tudo</button>
+                <button type="submit" class="delete-btn <?=($grand_total > 1)?'':'disabled';?>" name="delete_all" onclick="return confirm('excluir tudo do carrinho?');">Deletar tudo</button>
             </form>
+            <a href="menu.php" class="btn">Continue comprando</a>
         </div>
     </section>
     <!-- steps section starts -->
