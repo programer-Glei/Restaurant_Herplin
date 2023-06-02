@@ -72,40 +72,28 @@
                 $select_cart->execute($user_id);
                 if($select_cart->rowCount() > 0){
                     while($fetch_cart = $select_cart->fetch(PDO::FETCH_ASSOC)){
-
-                    }
-                }else{
-                    echo '<p class="empty">Seu carrinho está vazio</p>';
-                }
             ?>
             <form action="" method="post" class="box">
                 <input type="hidden" name="cart_id" value="<?= $fetch_cart['id']; ?>">
                 <a href="quick_view.php?pid=<?= $fetch_cart['pid'];?>" class="fas fa-eye"></a>
                 <button type="submit" class="fas fa-times" name="delete" onclick="return confirm('delete this item?');"></button>
-                <img src="img/dish-1.png" alt="imagem de Hamburguer">
-                <a href="#" class="cat">Comida rápida</a>
-                <div class="name">X tudo</div>
+                <img src="uploaded_img/<?=$fetch_cart['image'];?>" alt="imagem de Hamburguer">
+                <div class="name"><?=$fetch_cart['name'];?></div>
                 <div class="flex">
-                    <div class="price"> <span>R$</span>15 </div>
-                    <input type="number" name="qty" id="" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
-                    <button type="submit" class="fas fa-edit"></button>
+                    <div class="price"> <span>R$</span><?=$fetch_cart['price'];?> </div>
+                    <input type="number" name="qty" id="" class="qty" min="1" max="99" value="<?=$fetch_cart['quantity'];?>" onkeypress="if(this.value.length == 2) return false;">
+                    <button type="submit" class="fas fa-edit" name="update_qty"></button>
                 </div>
-                <div class="sub-total">Subtotal: <span>R$15,00</span> </div>
+                <div class="sub-total">Subtotal: <span>R$<?=$sub_total = ($fetch_cart['price'] * $fetch_cart['quantity'])?></span> </div>
             </form>
+            <?php
+                    $grand_total += $sub_total;
+                 }
+                }else{
+                    echo '<p class="empty">Seu carrinho está vazio</p>';
+                }
+            ?>
 
-            <form action="" method="post" class="box">
-                <button type="submit" class="fas fa-eye" name="quick_view"></button>
-                <button type="submit" class="fas fa-times" name="delete" onclick="return confirm('delete this item?');"></button>
-                <img src="img/pizza-2.png" alt="imagem de Hamburguer">
-                <a href="#" class="cat">Comida rápida</a>
-                <div class="name">X tudo</div>
-                <div class="flex">
-                    <div class="price"> <span>R$</span>15 </div>
-                    <input type="number" name="qty" id="" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
-                    <button type="submit" class="fas fa-edit"></button>
-                </div>
-                <div class="sub-total">Subtotal: <span>R$15,00</span> </div>
-            </form>
         </div>
         <div class="more-btn">
             <form action="" method="post">
