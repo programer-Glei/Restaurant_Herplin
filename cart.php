@@ -69,7 +69,7 @@
             <?php
                 $grand_total = 0;
                 $select_cart = $conn->prepare("SELECT * FROM `cart` WHERE user_id = ?");
-                $select_cart->execute($user_id);
+                $select_cart->execute([$user_id]);
                 if($select_cart->rowCount() > 0){
                     while($fetch_cart = $select_cart->fetch(PDO::FETCH_ASSOC)){
             ?>
