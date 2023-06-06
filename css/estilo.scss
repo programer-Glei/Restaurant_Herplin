@@ -133,6 +133,25 @@ section{
     display: none;
 }
 
+.disabled{
+    opacity: 0.5;
+    user-select: none;
+    pointer-events: none;
+}
+
+.message{
+    position: sticky;
+    top: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-between;
+    background-color: $--yellow;
+}
+
 /* HEADER */
 .header{
     position: sticky;
