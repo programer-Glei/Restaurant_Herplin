@@ -10,7 +10,7 @@
         header('location:index.php');
     }
 
-    if(isset($_POST['name'])){
+    if(isset($_POST['submit'])){
 
         $name = $_POST['name'];
         $name = filter_var($name, FILTER_SANITIZE_STRING);
@@ -23,6 +23,18 @@
         $address = $_POST['address'];
         $address = filter_var($address, FILTER_SANITIZE_STRING);
         $total_products = $_POST['total_products'];
+        $otal_price = $_POST['total_price'];
+
+        $check_cart = $conn->prepare("SELECT * FROM `cart` WHERE user_id = ?");
+        $check_cart->execute([$user_id]);
+
+        if($check_cart->rowCount() > 0){
+
+            if($address == ''){
+
+                $message[] = 'Por favor adicione seu endereço!';
+            }
+        }
     }
 ?>
 
