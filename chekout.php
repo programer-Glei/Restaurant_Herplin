@@ -31,8 +31,11 @@
         if($check_cart->rowCount() > 0){
 
             if($address == ''){
-
                 $message[] = 'Por favor adicione seu endereço!';
+            }else{
+
+                $insert_order = $conn->prepare("INSERT INTO `orders`(user_id, name, number, email, method, address, total_products, total_price) VALUES(?,?,?,?,?,?,?,?)");
+                $insert_order->execute([$user_id, $name, $number, $email, $method, $address, $total_products, $total_price]);
             }
         }
     }
