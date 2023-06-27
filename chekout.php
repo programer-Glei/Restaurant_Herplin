@@ -36,7 +36,14 @@
 
                 $insert_order = $conn->prepare("INSERT INTO `orders`(user_id, name, number, email, method, address, total_products, total_price) VALUES(?,?,?,?,?,?,?,?)");
                 $insert_order->execute([$user_id, $name, $number, $email, $method, $address, $total_products, $total_price]);
+
+                $delete_cart = $conn->prepare("DELETE FROM `cart` WHERE user_id = ?");
+                $delete_cart->execute([$user_id]);
+
+                $message[] = 'Pedido feito com sucesso!';
             }
+        }else{
+            $message[] = 'Seu carrinho está vazio';
         }
     }
 ?>
