@@ -107,6 +107,18 @@
         <form action="" method="post">
             <div class="cart-items">
                 <h3>Itens do carrinho</h3>
+                <?php
+                    $grand_total = 0;
+                    $cart_items[] = '';
+                    $select_cart = $conn->prepare("SELECT * FROM `cart` WHERE user_id = ?");
+                    $select_cart->execute([$user_id]);
+                    if($select_cart->rowCount() > 0){
+                        while($fetch_cart = $select_cart->fetch(PDO::FETCH_ASSOC)){
+                            $cart_items[] = $fetch_cart['name'].' ('.$fetch_cart['price'].' x '. $fetch_cart['quantity'].') - ';
+                            $total_products = implode($cart_items);
+                        }
+                    }
+                ?>
                 <p><span class="name">Prato principal</span> <span class="price">R$ 18,00</span></p>
                 <p><span class="name">Pizza</span> <span class="price">R$ 18,00</span></p>
                 <p><span class="name">Sobremesa</span> <span class="price">R$ 18,00</span></p>
