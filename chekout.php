@@ -92,11 +92,7 @@
                         }
                     }
                 ?>
-                <p><span class="name">Prato principal</span> <span class="price">R$ 18,00</span></p>
-                <p><span class="name">Pizza</span> <span class="price">R$ 18,00</span></p>
-                <p><span class="name">Sobremesa</span> <span class="price">R$ 18,00</span></p>
-                <p class="grand-total"><span class="name">Total geral:</span> <span class="price">R$5,00</span></p>
-                <a href="cart.php" class="btn">Ver carrinho</a>
+                <p><span class="name"><?= $fetch_cart['name'] ?></span></p>
             </div>
             <div class="user-profile">
                 <h3>Suas informações</h3>
