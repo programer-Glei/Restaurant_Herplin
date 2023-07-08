@@ -92,7 +92,7 @@
                         }
                     }
                 ?>
-                <p><span class="name"><?= $fetch_cart['name'] ?></span></p>
+                <p><span class="name"><?= $fetch_cart['name'] ?></span> <span class="price">R$<?=$fetch_cart['price'];?> x <?=$fetch_cart['quantity'];?></span></p>
             </div>
             <div class="user-profile">
                 <h3>Suas informações</h3>
