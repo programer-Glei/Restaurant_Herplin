@@ -89,10 +89,16 @@
                             $cart_items[] = $fetch_cart['name'].' ('.$fetch_cart['price'].' x '. $fetch_cart['quantity'].') - ';
                             $total_products = implode($cart_items);
                             $grand_total += ($fetch_cart['price'] * $fetch_cart['quantity']);
-                        }
-                    }
                 ?>
                 <p><span class="name"><?= $fetch_cart['name'] ?></span> <span class="price">R$<?=$fetch_cart['price'];?> x <?=$fetch_cart['quantity'];?></span></p>
+                <?php
+                         }
+                        }else{
+                            echo '<p class="empty">Seu carrinho está vazio</p>';
+                        }
+                ?>
+                <p class="grand-total"><span class="name">Total geral:</span><span class="price">R$<?=$grand_total;?></span></p>
+                <a href="cart.php" class="btn">Ver carrinho</a>
             </div>
             <div class="user-profile">
                 <h3>Suas informações</h3>
