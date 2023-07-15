@@ -105,16 +105,17 @@
             <input type="hidden" name="total_price" value="<?= $grand_total; ?>">
             <input type="hidden" name="name" value="<?= $fetch_profile['name'] ?>">
             <input type="hidden" name="number" value="<?= $fetch_profile['number'] ?>">
-            <input type="hidden" name="">
+            <input type="hidden" name="email" value="<?= $fetch_profile['email'] ?>">
+            <input type="hidden" name="address" value="<?= $fetch_profile['address'] ?>">
 
             <div class="user-profile">
                 <h3>Suas informações</h3>
-                <p><i class="fas fa-user"></i> <span>Lucas Range</span> </p>
-                <p><i class="fas fa-phone"></i> <span>1234567890</span> </p>
-                <p><i class="fas fa-envelope"></i> <span>lucasrange@gmail.com</span> </p>
+                <p><i class="fas fa-user"></i> <span><?= $fetch_profile['name'] ?></span> </p>
+                <p><i class="fas fa-phone"></i> <span><?= $fetch_profile['number'] ?></span> </p>
+                <p><i class="fas fa-envelope"></i> <span><?= $fetch_profile['email'] ?></span> </p>
                 <a href="update_profile.php" class="btn">Atualizar perfil</a>
                 <h3>Endereço de entrega</h3>
-                <p><i class="fas fa-map-marker-alt"></i><span>Av. Prof. de freitas Leitão filho, Jardim casa grande, São Paulo - 04865-000</span></p>
+                <p><i class="fas fa-map-marker-alt"></i><span><?php if($fetch_profile['address'] == ''){echo 'por favor digite seu endereço';}else{echo $fetch_profile['address'];} ?></span></p>
                 <a href="update_address.php" class="btn">Atualizar endereço</a>
                 <select name="method" id="" class="box" required>
                     <option value="" disabled selected>Método de pagamento</option>
@@ -123,7 +124,7 @@
                     <option value="paytm">Paytm</option>
                     <option value="paypal">Paypal</option>
                 </select>
-                <input type="submit" value="Fazer pedido" class="btn" style="width:100%;background:#222;color:#fff;">
+                <input type="submit" value="Fazer pedido" class="btn <?php if($fetch_profile['address'] == ''){echo 'disabled'} ?>" style="width:100%;background:#222;color:#fff;" name="submit">
             </div>
         </form>
     </section>
