@@ -100,6 +100,13 @@
                 <p class="grand-total"><span class="name">Total geral:</span><span class="price">R$<?=$grand_total;?></span></p>
                 <a href="cart.php" class="btn">Ver carrinho</a>
             </div>
+
+            <input type="hidden" name="total_products" value="<?= $total_products; ?>">
+            <input type="hidden" name="total_price" value="<?= $grand_total; ?>">
+            <input type="hidden" name="name" value="<?= $fetch_profile['name'] ?>">
+            <input type="hidden" name="number" value="<?= $fetch_profile['number'] ?>">
+            <input type="hidden" name="">
+
             <div class="user-profile">
                 <h3>Suas informações</h3>
                 <p><i class="fas fa-user"></i> <span>Lucas Range</span> </p>
