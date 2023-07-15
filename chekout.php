@@ -124,7 +124,7 @@
                     <option value="paytm">Paytm</option>
                     <option value="paypal">Paypal</option>
                 </select>
-                <input type="submit" value="Fazer pedido" class="btn <?php if($fetch_profile['address'] == ''){echo 'disabled'} ?>" style="width:100%;background:#222;color:#fff;" name="submit">
+                <input type="submit" value="Fazer pedido" class="btn <?php if($fetch_profile['address'] == ''){echo 'disabled';} ?>" style="width:100%;background:#222;color:#fff;" name="submit">
             </div>
         </form>
     </section>

@@ -97,7 +97,7 @@
         </div>
         <div class="cart-total">
             <p>Total: <span>R$<?=$grand_total?></span> </p>
-            <a href="checkout.php" class="btn <?=($grand_total> 1)?'':'disabled';?>">Comfirmar pedido</a>
+            <a href="chekout.php" class="btn <?=($grand_total> 1)?'':'disabled';?>">Comfirmar pedido</a>
         </div>
         <div class="more-btn">
             <form action="" method="post">
