@@ -6,6 +6,14 @@
 
     if(isset($_SESSION['user_id'])){
         $user_id = $_SESSION['user_id'];
+    }else{
+        $user_id = '';
+        header('location:index.php');
+    }
+
+    if(isset($_POST['submit'])){
+
+        $address = $_POST['flat'] .', '.$_POST['building'].', '.$_POST['area'].', '.$_POST['town'] .', '. $_POST['city'] .', '. 
     }
 ?>
 
