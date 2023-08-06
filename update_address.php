@@ -13,11 +13,13 @@
 
     if(isset($_POST['submit'])){
 
-        $address = $_POST['flat'] .', '.$_POST['building'].', '.$_POST['area'].', '.$_POST['town'] .', '. $_POST['city'] .', '. $_POST['state'] .', '. $_POST['country'] .' - '. $_POST['pin_code'];
+        $address = $_POST['street'] .', '. $_POST['flat'] .', '. $_POST['city'] .', '. $_POST['state'] .', '.' - '. $_POST['pin_code'];
         $address = filter_var($address, FILTER_SANITIZE_STRING);
 
         $update_address = $conn->prepare("UPDATE `users` set address = ? WHERE id = ?");
         $update_address->execute([$address, $user_id]);
+
+        $message[] = 'Endereço salvo!';
     }
 ?>
 
@@ -37,37 +39,8 @@
     <title>Atualizar perfil</title>
 </head>
 <body>
-    <header class="header">
 
-        <section class="flex">
-            <a href="index.php" class="logo">Yum-yum</a>
-
-            <nav class="navbar">
-                <a href="index.php" class="logo">Home</a>
-                <a href="about.php" class="logo">Sobre nós</a>
-                <a href="menu.php" class="logo">Menu</a>
-                <a href="orders.php" class="logo">Vendas</a>
-                <a href="contact.php" class="logo">Contato</a>
-            </nav>
-
-            <div class="icons">
-                <a href="search.php"><i class="fas fa-search"></i></a>
-                <a href="cart.php"><i class="fas fa-shopping-cart"></i> <span>(3)</span> </a>
-                <div id="user-btn" class="fas fa-user"></div>
-                <div id="menu-btn" class="fas fa-bars"></div>
-            </div>
-
-            <div class="profile">
-                <p class="name">Gleibinho</p>
-                <div class="flex">
-                    <a href="profile.php" class="btn">Perfil</a>
-                    <a href="#" class="delete-btn">Sair</a>
-                </div>
-                <p class="acconut"><a href="login.php">Conecte-se</a> ou <a href="register.php">Cadastre-se</a> </p>
-            </div>
-
-        </section>
-    </header>
+    <?php include 'components/user_header.php' ?>
 
     <!-- shopping cart section starts -->
     <section class="form-container">
@@ -77,7 +50,7 @@
             <input type="text" name="flat" class="box" placeholder="Número da casa ou apartamento" required maxlength="50">
             <input type="text" name="city" class="box" placeholder="Nome da sua cidade" required maxlength="50">
             <input type="text" name="state" class="box" placeholder="Nome do seu estado" required maxlength="50">
-            <input type="text" name="cep" class="box" placeholder="Seu CEP" required maxlength="50">
+            <input type="text" name="pin_code" class="box" placeholder="Seu CEP" required maxlength="50">
             <input type="submit" class="btn" value="Salvar endereço" name="submit">
         </form>
     </section>
