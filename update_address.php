@@ -13,7 +13,7 @@
 
     if(isset($_POST['submit'])){
 
-        $address = $_POST['street'] .', '. $_POST['flat'] .', '. $_POST['city'] .', '. $_POST['state'] .', '.' - '. $_POST['pin_code'];
+        $address = $_POST['street'] .', '. $_POST['flat'] .', '. $_POST['area'].' - '. $_POST['pin_code']. ', '. $_POST['city'] .', '. $_POST['state'];
         $address = filter_var($address, FILTER_SANITIZE_STRING);
 
         $update_address = $conn->prepare("UPDATE `users` set address = ? WHERE id = ?");
@@ -48,9 +48,10 @@
             <h3>Seu endereço</h3>
             <input type="text" name="street" class="box" placeholder="Nome da rua" required maxlength="50">
             <input type="text" name="flat" class="box" placeholder="Número da casa ou apartamento" required maxlength="50">
+            <input type="text" name="area" class="box" placeholder="Seu Bairro" required maxlength="50">
+            <input type="text" name="pin_code" class="box" placeholder="Seu CEP" required maxlength="50">
             <input type="text" name="city" class="box" placeholder="Nome da sua cidade" required maxlength="50">
             <input type="text" name="state" class="box" placeholder="Nome do seu estado" required maxlength="50">
-            <input type="text" name="pin_code" class="box" placeholder="Seu CEP" required maxlength="50">
             <input type="submit" class="btn" value="Salvar endereço" name="submit">
         </form>
     </section>

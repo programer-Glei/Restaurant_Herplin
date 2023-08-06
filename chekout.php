@@ -23,7 +23,7 @@
         $address = $_POST['address'];
         $address = filter_var($address, FILTER_SANITIZE_STRING);
         $total_products = $_POST['total_products'];
-        $otal_price = $_POST['total_price'];
+        $total_price = $_POST['total_price'];
 
         $check_cart = $conn->prepare("SELECT * FROM `cart` WHERE user_id = ?");
         $check_cart->execute([$user_id]);
@@ -34,7 +34,7 @@
                 $message[] = 'Por favor adicione seu endereço!';
             }else{
 
-                $insert_order = $conn->prepare("INSERT INTO `orders`(user_id, name, number, email, method, address, total_products, total_price) VALUES(?,?,?,?,?,?,?,?)");
+                $insert_order = $conn->prepare("INSERT INTO `orders`(user_id, name, number, email, method, addres, total_products, total_price) VALUES(?,?,?,?,?,?,?,?)");
                 $insert_order->execute([$user_id, $name, $number, $email, $method, $address, $total_products, $total_price]);
 
                 $delete_cart = $conn->prepare("DELETE FROM `cart` WHERE user_id = ?");
